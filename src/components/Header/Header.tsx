@@ -1,9 +1,12 @@
 import React from "react";
+import HeaderNavBar from '../Header/components/HeaderNavBar.tsx';
+import HeaderMain from '../Header/components/HeaderMain.tsx';
 
 const Header = () => {
   return (
-    <header class="c-header" id="c-header">
-      header
+    <header className="c-header" id="c-header">
+      <HeaderNavBar />
+      <HeaderMain />
     </header>
   );
 };
