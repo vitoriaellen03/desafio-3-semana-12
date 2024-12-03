@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Mesa de Madeira",
+      "price": 450.0,
+      "image": "https://example.com/image.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sofá de Couro",
+      "price": 1200.0,
+      "image": "https://example.com/image2.jpg"
+    }
+  ]
+}
