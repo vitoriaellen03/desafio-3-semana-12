@@ -12,5 +12,13 @@
       "price": 1200.0,
       "image": "https://example.com/image2.jpg"
     }
+  ],
+  "users": [
+    {
+      "id": "vi",
+      "username": "usuario1",
+      "email": "usuario1@example.com",
+      "password": "@Senha123"
+    }
   ]
 }
