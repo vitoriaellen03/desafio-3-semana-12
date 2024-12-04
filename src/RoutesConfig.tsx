@@ -10,24 +10,30 @@ import CartPage from './pages/cartPage/cartPage';
 import CheckoutPage from './pages/checkoutPage/checkoutPage';
 import PageNotFound from './components/Error/PageNotFound';
 import ProtectedRouteError from './components/Error/ProtectedRouteError';
+import { useUser } from '@clerk/clerk-react';
 
 const RoutesConfig: React.FC = () => {
-  const isValidProductRoute = (path: string) => path.startsWith('/shop/product');
-  const isValidCartRoute = (path: string) => path === "/cart";
-  const isValidCheckoutRoute = (path: string) => path === "/checkout";
+  const { user } = useUser();
+  const isLoggedIn = user || localStorage.getItem('isLoggedIn') === 'true';
+
+  const isValidProductRoute = (id: string) => !!id;
+  const isValidCartRoute = (path: string) => path === "/cart"; 
+  const isValidCheckoutRoute = (path: string) => path === "/cart/checkout"; 
 
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route 
+        path="/login" 
+        element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} 
+      />
       <Route path="/shop" element={<ShopPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="/cart" element={<CartPage />} />
-
+      
       <Route
         path="/shop/product/:id"
         element={
-          <RouteGuard isValidRoute={isValidProductRoute(window.location.pathname)} redirectTo="/error">
+          <RouteGuard isValidRoute={(routeParams: { id: string }) => isValidProductRoute(routeParams.id)} redirectTo="/error">
             <ProductPage />
           </RouteGuard>
         }
@@ -36,7 +42,7 @@ const RoutesConfig: React.FC = () => {
       <Route
         path="/cart"
         element={
-          <RouteGuard isValidRoute={isValidCartRoute(window.location.pathname)} redirectTo="/error">
+          <RouteGuard isValidRoute={() => isValidCartRoute(window.location.pathname)} redirectTo="/error">
             <CartPage />
           </RouteGuard>
         }
@@ -45,15 +51,18 @@ const RoutesConfig: React.FC = () => {
       <Route
         path="/cart/checkout"
         element={
-          <RouteGuard isValidRoute={isValidCheckoutRoute(window.location.pathname)} redirectTo="/protected-error">
-            <CheckoutPage />
-          </RouteGuard>
+          isLoggedIn ? (
+            <RouteGuard isValidRoute={() => isValidCheckoutRoute(window.location.pathname)} redirectTo="/protected-error">
+              <CheckoutPage />
+            </RouteGuard>
+          ) : (
+            <Navigate to="/protected-error" replace />
+          )
         }
       />
 
       <Route path="/error" element={<PageNotFound />} />
       <Route path="/protected-error" element={<ProtectedRouteError />} />
-      
       <Route path="*" element={<Navigate to="/error" replace />} />
     </Routes>
   );

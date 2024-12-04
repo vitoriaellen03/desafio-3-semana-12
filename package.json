@@ -11,12 +11,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/clerk-expo": "^2.3.13",
     "@clerk/clerk-react": "^5.18.0",
     "axios": "^1.7.8",
     "boxicons": "^2.1.4",
+    "expo-secure-store": "^14.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
