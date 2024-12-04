@@ -8,6 +8,7 @@ const HeaderMain: React.FC = () => {
   const hideHeader =
     pathParts[0] === "product" && pathParts.length === 1 || 
     location.pathname === "/error" || 
+    location.pathname === "/login" || 
     location.pathname === "/protected-error" || 
     location.pathname.includes("/product/") ||
     location.pathname === "*";

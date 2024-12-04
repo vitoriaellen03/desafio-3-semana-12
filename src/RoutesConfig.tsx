@@ -17,19 +17,19 @@ const RoutesConfig: React.FC = () => {
   const isLoggedIn = user || localStorage.getItem('isLoggedIn') === 'true';
 
   const isValidProductRoute = (id: string) => !!id;
-  const isValidCartRoute = (path: string) => path === "/cart"; 
-  const isValidCheckoutRoute = (path: string) => path === "/cart/checkout"; 
+  const isValidCartRoute = (path: string) => path === "/cart";
+  const isValidCheckoutRoute = (path: string) => path === "/cart/checkout";
 
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route 
-        path="/login" 
-        element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} 
+      <Route
+        path="/login"
+        element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />}
       />
       <Route path="/shop" element={<ShopPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      
+
       <Route
         path="/shop/product/:id"
         element={
