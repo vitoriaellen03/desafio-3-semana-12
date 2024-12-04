@@ -25,8 +25,8 @@ const HeaderNavbar = () => {
             <section>
                 <div className="devices">
                     <ul className="devices-links">
-                        <li className="dvc"><img src="../../assets/img/user.svg" alt="user-login" /></li>
-                        <li className="dvc"><img src="../../assets/img/cart.svg" alt="cart" /></li>
+                        <li className="dvc"><Link to="/login"><img src="../../assets/img/user.svg" alt="user-login" /></Link></li>
+                        <li className="dvc"><Link to="/cart"><img src="../../assets/img/cart.svg" alt="cart" /></Link></li>
                     </ul>
                 </div>
             </section>

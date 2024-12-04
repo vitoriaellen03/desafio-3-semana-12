@@ -22,6 +22,7 @@ const RoutesConfig: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/shop" element={<ShopPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/cart" element={<CartPage />} />
 
       <Route
         path="/shop/product/:id"
