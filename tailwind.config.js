@@ -7,15 +7,7 @@ export default {
         primary: "#1E293B",
       },
       fontFamily: {
-        roboto: ["Roboto"],
-      },
-      spacing: {
-        hundrend: "100px",
-        sixty: "60px"
-      },
-      gradientColorStops: {
-        "gradient-purple": "#FC04BA",
-        "gradient-yellow": "#FFC702",
+        Popins: ["Poppins", "sans-serif"],
       },
     },
   },
