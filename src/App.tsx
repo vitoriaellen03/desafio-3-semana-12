@@ -26,29 +26,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import Header from './components/Header/Header';
-// import RoutesConfig from './RoutesConfig';
-// import Footer from './components/Footer/Footer';
-
-// const App: React.FC = () => {
-//   return (
-//     <>
-//       <Header />
-//       <RoutesConfig />
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default App;
