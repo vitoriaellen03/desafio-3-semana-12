@@ -9,7 +9,7 @@ const Footer = () => {
       <section>
         <div>
           <Link to="/">
-            <h3>Funiro</h3>
+            <h3>Funiro.</h3>
           </Link>
           <p>400 University Drive Suite 200 Coral Gables, <br /> FL 33134, USA</p>
           <ul>
