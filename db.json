@@ -1,24 +1,1367 @@
 {
-  "products": [
+  "categories": [
     {
       "id": "1",
-      "name": "Mesa de Madeira",
-      "price": 450,
-      "image": "https://example.com/image.jpg"
+      "name": "Dining",
+      "description": "Furniture and items for dining rooms."
     },
     {
       "id": "2",
-      "name": "Sofá de Couro",
-      "price": 1200,
-      "image": "https://example.com/image2.jpg"
+      "name": "Living",
+      "description": "Furniture and decor for living rooms."
+    },
+    {
+      "id": "3",
+      "name": "Bedroom",
+      "description": "Furniture and essentials for bedrooms."
     }
   ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    },
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    },
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    },
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    },
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    },
+    {
+      "id": "1",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "https://example.com/image1.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": ["wooden", "dining table", "furniture"],
+      "share": "https://example.com/share/1",
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "https://example.com/image2.jpg",
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": ["leather", "sofa", "living room"],
+      "share": "https://example.com/share/2",
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "https://example.com/image3.jpg",
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/3",
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "https://example.com/image4.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": ["chairs", "dining", "furniture"],
+      "share": "https://example.com/share/4",
+      "discount": 10
+    },
+    {
+      "id": "5",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "https://example.com/image5.jpg",
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": ["sofa", "living room", "furniture"],
+      "share": "https://example.com/share/5",
+      "discount": 20
+    },
+    {
+      "id": "6",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "https://example.com/image6.jpg",
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": ["bed frame", "bedroom", "furniture"],
+      "share": "https://example.com/share/6",
+      "discount": 5
+    },
+    {
+      "id": "7",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "https://example.com/image7.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": ["buffet", "dining", "storage"],
+      "share": "https://example.com/share/7",
+      "discount": 10
+    },
+    {
+      "id": "8",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "https://example.com/image8.jpg",
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": ["recliner", "leather", "living room"],
+      "share": "https://example.com/share/8",
+      "discount": 15
+    },
+    {
+      "id": "9",
+      "name": "Wardrobe Closet",
+      "price": 550,
+      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
+      "short_description": "Spacious wardrobe closet.",
+      "additional_information": "Perfect for organizing clothes and accessories.",
+      "image": "https://example.com/image9.jpg",
+      "sizes": {
+        "L": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "WC-009",
+      "tags": ["wardrobe", "bedroom", "storage"],
+      "share": "https://example.com/share/9",
+      "discount": 5
+    },
+    {
+      "id": "10",
+      "name": "Dining Table with Chairs",
+      "price": 800,
+      "description": "A dining table set with six matching chairs for your dining area.",
+      "short_description": "Dining table set for six.",
+      "additional_information": "Made from high-quality wood with a glossy finish.",
+      "image": "https://example.com/image10.jpg",
+      "sizes": {
+        "L": {
+          "Brown": 4,
+          "Black": 2
+        }
+      },
+      "category_id": "1",
+      "sku": "DT-010",
+      "tags": ["dining", "furniture", "set"],
+      "share": "https://example.com/share/10",
+      "discount": 10
+    }
+],
   "users": [
     {
-      "id": "vi",
-      "username": "usuario1",
-      "email": "usuario1@example.com",
-      "password": "@Senha123"
+      "id": "1",
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "@Password123"
     }
   ]
 }
