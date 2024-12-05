@@ -1,5 +1,6 @@
 // UserDeviceLinks.js
 import React from 'react';
+import 'boxicons';
 import { useUser, useClerk } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 

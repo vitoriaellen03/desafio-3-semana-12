@@ -20,15 +20,15 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4>Links</h4>
+          <h5>Links</h5>
           <NavLinks />
         </div>
         <div>
-          <h4>Help</h4>
+          <h5>Help</h5>
           <HelpLinks />
         </div>
         <div>
-          <h4>Newsletter</h4>
+          <h5>Newsletter</h5>
           <input type="email" name="" id="" />
           <button type="submit">Subscribe</button>
         </div>
