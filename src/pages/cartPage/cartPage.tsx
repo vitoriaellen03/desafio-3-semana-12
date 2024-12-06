@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const CartPage = () => {
     const [cart, setCart] = useState([]);
 
-    // Função para carregar o carrinho do localStorage
     const loadCartFromLocalStorage = () => {
         const savedCart = JSON.parse(localStorage.getItem('cart'));
         if (savedCart) {
@@ -16,11 +15,10 @@ const CartPage = () => {
         loadCartFromLocalStorage();
     }, []);
 
-    // Função para atualizar a quantidade de produtos no carrinho
     const updateQuantity = (id, quantity) => {
-        if (quantity < 0) return;  // Não permite quantidade negativa
+        if (quantity < 0) return;
         if (quantity === 0) {
-            handleRemoveProduct(id);  // Se a quantidade for 0, remove o item
+            handleRemoveProduct(id);
             return;
         }
 
@@ -31,19 +29,16 @@ const CartPage = () => {
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
 
-    // Função para remover um produto do carrinho
     const handleRemoveProduct = (productId) => {
         const updatedCart = cart.filter(item => item.id !== productId);
         setCart(updatedCart);
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
 
-    // Função para calcular o subtotal de um item
     const getItemSubtotal = (price, quantity) => {
         return price * quantity;
     };
 
-    // Função para calcular o total do carrinho
     const getTotal = () => {
         return cart.reduce((acc, item) => acc + getItemSubtotal(item.price, item.quantity), 0);
     };
@@ -71,12 +66,14 @@ const CartPage = () => {
                                 <tr key={item.id}>
                                     <td>
                                         <div className="product-item">
-                                            <img
-                                                src={item.image}
-                                                alt={item.name}
-                                                className="product-image"
-                                            />
-                                            <span>{item.name}</span>
+                                            <Link to={`/shop/product/${item.id}`}>
+                                                <img
+                                                    src={item.image}
+                                                    alt={item.name}
+                                                    className="product-image"
+                                                />
+                                                <span>{item.name}</span>
+                                            </Link>
                                         </div>
                                     </td>
                                     <td>{`Rs. ${item.price.toFixed(2)}`}</td>

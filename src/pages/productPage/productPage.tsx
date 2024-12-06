@@ -6,7 +6,6 @@ const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [cart, setCart] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -19,7 +18,6 @@ const ProductPage = () => {
   }, [id]);
 
   const handleAddToCart = (product) => {
-    setLoading(true);
     const existingProductIndex = cart.findIndex((item) => item.id === product.id);
     let updatedCart;
 
@@ -32,15 +30,10 @@ const ProductPage = () => {
 
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
-
-    setTimeout(() => {
-      setLoading(false);
-      window.location.reload(); // Recarregar a página
-    }, 500);
   };
 
   if (!product) {
-    return <div className="spinner">Loading...</div>; // Spinner simples
+    return null;
   }
 
   return (
@@ -64,7 +57,6 @@ const ProductPage = () => {
           <button
             className="add-to-cart-button"
             onClick={() => handleAddToCart(product)}
-            disabled={loading}
           >
             Add to Cart
           </button>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import data from "../../../db.json";
+import { Link } from "react-router-dom";
 
 const SimpleProductDisplay = () => {
   const [products, setProducts] = useState([]);
@@ -54,26 +55,28 @@ const SimpleProductDisplay = () => {
           {products.length > 0 ? (
             products.map((product) => (
               <div className="product-gb" key={product.id}>
-                <div>
-                  <img
-                    className="image"
-                    src={product.image}
-                    alt={product.name}
-                  />
-                  <h4 className="name">{product.name}</h4>
-                  <p>{product.short_description}</p>
-                  <p className="price">${product.price}</p>
-                </div>
-                <div>
-                  <button onClick={() => handleAddToCart(product)}>
-                    Add to Cart
-                  </button>
+                <Link to={`/shop/product/${product.id}`}>
                   <div>
-                    <button>Share</button>
-                    <button>Compare</button>
-                    <button>Like</button>
+                    <img
+                      className="image"
+                      src={product.image}
+                      alt={product.name}
+                    />
+                    <h4 className="name">{product.name}</h4>
+                    <p>{product.short_description}</p>
+                    <p className="price">${product.price}</p>
                   </div>
-                </div>
+                  <div>
+                    <button onClick={() => handleAddToCart(product)}>
+                      Add to Cart
+                    </button>
+                    <div>
+                      <button>Share</button>
+                      <button>Compare</button>
+                      <button>Like</button>
+                    </div>
+                  </div>
+                </Link>
               </div>
             ))
           ) : (

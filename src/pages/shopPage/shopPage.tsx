@@ -223,21 +223,23 @@ const ShopPage = () => {
             currentProducts.map((product) => (
               <div className="product-gb" key={product.id}>
                 <Link to={`/shop/product/${product.id}`}>
-                  <img className="image" src={product.image} alt={product.name} />
-                  <h4 className="name">{product.name}</h4>
-                </Link>
-                <p>{product.short_description}</p>
-                <p className="price">${product.price}</p>
-                <div>
-                  <button onClick={() => handleAddToCart(product)}>
-                    Add to Cart
-                  </button>
                   <div>
-                    <button>Share</button>
-                    <button>Compare</button>
-                    <button>Like</button>
+                    <img className="image" src={product.image} alt={product.name} />
+                    <h4 className="name">{product.name}</h4>
+                    <p>{product.short_description}</p>
+                    <p className="price">${product.price}</p>
                   </div>
-                </div>
+                  <div>
+                    <button onClick={() => handleAddToCart(product)}>
+                      Add to Cart
+                    </button>
+                    <div>
+                      <button>Share</button>
+                      <button>Compare</button>
+                      <button>Like</button>
+                    </div>
+                  </div>
+                </Link>
               </div>
             ))
           ) : (
