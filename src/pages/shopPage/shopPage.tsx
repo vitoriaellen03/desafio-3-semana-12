@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import data from "../../../db.json";
 
@@ -9,9 +9,23 @@ const ShopPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage, setProductsPerPage] = useState(16);
   const [inputValue, setInputValue] = useState(16);
-  const [sortOrder, setSortOrder] = useState("default"); // "default" para sem filtro de preço
+  const [sortOrder, setSortOrder] = useState("default");
+  const [cart, setCart] = useState([]);
 
   const categories = data.categories;
+
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("cart"));
+    if (savedCart) {
+      setCart(savedCart);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (cart.length > 0) {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  }, [cart]);
 
   const filterByCategory = (categoryId) => {
     setLoading(true);
@@ -24,6 +38,28 @@ const ShopPage = () => {
       setLoading(false);
       setShowFilterPopup(false);
       setCurrentPage(1);
+    }, 1000);
+  };
+
+  const handleAddToCart = (product) => {
+    setLoading(true);
+    setTimeout(() => {
+      const existingProduct = cart.find((item) => item.id === product.id);
+      let updatedCart;
+
+      if (existingProduct) {
+        updatedCart = cart.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        );
+      } else {
+        updatedCart = [...cart, { ...product, quantity: 1 }];
+      }
+
+      setCart(updatedCart);
+      localStorage.setItem('cart', JSON.stringify(updatedCart));
+      setLoading(false);
+
+      window.location.reload();
     }, 1000);
   };
 
@@ -106,7 +142,7 @@ const ShopPage = () => {
     setLoading(true);
     setTimeout(() => {
       if (order === "default") {
-        setProducts(data.products); // Volta ao estado original sem filtro
+        setProducts(data.products);
       } else {
         const sortedProducts = [...products];
         if (order === "asc") {
@@ -124,7 +160,7 @@ const ShopPage = () => {
     <div>
       <div>
         <button onClick={() => setShowFilterPopup(true)}>
-          <img src="../../../../../assets/img/filter.svg" alt="" /> 
+          <img src="../../../../../assets/img/filter.svg" alt="" />
           Filter
         </button>
       </div>
@@ -179,20 +215,32 @@ const ShopPage = () => {
       {loading ? (
         <LoadingSpinner />
       ) : (
-        <div>
+        <div className="products">
           {productsPerPage === 0 ? (
             <p>No products available.</p>
           ) : currentProducts.length > 0 ? (
             currentProducts.map((product) => (
-              <div key={product.id}>
+              <div className="product-gb" key={product.id}>
                 <img
+                  className="image"
                   src={product.image}
                   alt={product.name}
-                  style={{ maxWidth: "100px" }}
                 />
-                <h4>{product.name}</h4>
+                <h4 className="name">{product.name}</h4>
                 <p>{product.short_description}</p>
-                <p>${product.price}</p>
+                <p className="price">${product.price}</p>
+
+
+                <div>
+                  <button onClick={() => handleAddToCart(product)}>
+                    Add to Cart
+                  </button>
+                  <div>
+                    <button>Share</button>
+                    <button>Compare</button>
+                    <button>Like</button>
+                  </div>
+                </div>
               </div>
             ))
           ) : (
@@ -210,9 +258,6 @@ const ShopPage = () => {
               <button
                 key={pageNumber}
                 onClick={() => goToPage(pageNumber)}
-                style={{
-                  fontWeight: currentPage === pageNumber ? "bold" : "normal",
-                }}
               >
                 {pageNumber}
               </button>

@@ -1,6 +1,6 @@
-// UserDeviceLinks.js
 import React from 'react';
 import 'boxicons';
+import CartAddProduct from '../../CartAddProducts/CartAddProducts';
 import { useUser, useClerk } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const UserDeviceLinks = () => {
   const handleLogout = () => {
     localStorage.removeItem('isLoggedIn');
     signOut();
-    window.location.href = '/'; 
+    window.location.href = '/';
   };
 
   return (
@@ -32,9 +32,7 @@ const UserDeviceLinks = () => {
           </li>
         )}
         <li className="dvc">
-          <Link to="/cart">
-            <img src="../../assets/img/cart.svg" alt="cart" />
-          </Link>
+          <CartAddProduct />
         </li>
       </ul>
     </div>

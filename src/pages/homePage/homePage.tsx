@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import SimpleProductDisplay from "../../components/SimpleProductDisplay/SimpleProductDisplay";
+import SimpleCategories from "../../components/SimpleCategories/SimpleCategories";
 
 const HomePage = () => {
   return (
@@ -22,6 +24,7 @@ const HomePage = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
         <section>
+          <SimpleCategories />
           <div>
             <div>
               <img src="" alt="" />
@@ -43,16 +46,7 @@ const HomePage = () => {
           <h2>Our Products</h2>
         </section>
         <section>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <SimpleProductDisplay />
           <div>
             <Link to='/shop'>Show More</Link>
           </div>
