@@ -44,14 +44,16 @@ const HeaderMain: React.FC = () => {
   const isHomePage = location.pathname === "/";
 
   return (
-    <>
+    <section>
       {!isHomePage && !hideHeader && (
         <div className="header-navgatepage">
+          <div className="h-main">
           {location.pathname !== "/home" &&
             location.pathname !== "/error" &&
             location.pathname !== "/protected-error" &&
             !location.pathname.includes("/product/") &&
             !location.pathname.includes("/shop/product/") && (
+              
               <>
                 <img src="../../assets/img/logo.svg" alt="logo for site" className="logo" />
                 <h2 className="title-page">{title}</h2>
@@ -67,9 +69,10 @@ const HeaderMain: React.FC = () => {
               </li>
             ))}
           </ul>
+          </div>
         </div>
       )}
-    </>
+    </section>
   );
 };
 

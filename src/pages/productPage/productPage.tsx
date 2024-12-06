@@ -30,6 +30,9 @@ const ProductPage = () => {
 
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
+    
+    // Recarregar a página após adicionar ao carrinho
+    window.location.reload();
   };
 
   if (!product) {

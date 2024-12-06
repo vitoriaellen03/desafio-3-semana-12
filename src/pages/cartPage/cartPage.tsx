@@ -100,10 +100,10 @@ const CartPage = () => {
                 <div className="cart-totals">
                     <h2>Cart Totals</h2>
                     <p>
-                        <span>Subtotal:</span> {getTotal().toFixed(2)}
+                        <span>Subtotal: Rs.</span> {getTotal().toFixed(2)}
                     </p>
                     <p>
-                        <span>Total:</span> {getTotal().toFixed(2)}
+                        <span>Total: Rs.</span> {getTotal().toFixed(2)}
                     </p>
                     <Link to="/cart/checkout" className="checkout-button">Check Out</Link>
                 </div>

@@ -1,29 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useUser, useClerk } from '@clerk/clerk-react';
+import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import NavLinks from './NavLinks';
 import UserDeviceLinks from './UserDeviceLinks';
 
 const HeaderNavbar = () => {
-  const { user } = useUser();
-  const { signOut } = useClerk();
-  const isLoggedIn = user || localStorage.getItem('isLoggedIn') === 'true';
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    signOut();
-    window.location.href = '/';
+  // Update window width on resize
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
   };
 
+  const isActive = windowWidth <= 768 ? isMenuOpen : false;
+
   return (
-    <div className="header-navbar">
+    <div className="header-navbar conteiner">
       <section>
         <Logo />
       </section>
       <section>
-        <div className="navgator-menu">
-          <NavLinks />
+        <div className="navigator-menu">
+          <div
+            className={`hamburger ${isActive ? 'active' : 'default'}`}
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          ></div>
+          <nav className={`nav-menu ${isActive ? 'active' : 'hidden'}`}>
+            <ul>
+              <NavLinks />
+            </ul>
+          </nav>
         </div>
       </section>
       <section>

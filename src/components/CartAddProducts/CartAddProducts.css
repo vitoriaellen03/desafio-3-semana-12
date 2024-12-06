@@ -1,0 +1,76 @@
+/* Header Cart Popup Button */
+.c-cart {
+    @apply cursor-pointer relative h-9 w-9 flex items-center justify-center flex-row flex-nowrap content-center;
+
+}
+
+.cart-conteiner box-icon {
+    cursor: pointer;
+}
+
+.cont {
+    @apply absolute top-0 right-0 flex h-[0.75rem] w-[0.75rem] flex-row items-center justify-center rounded-full bg-red-500 p-2 text-xs leading-[1] text-white;
+}
+
+.popup {
+    @apply fixed top-0 right-0 bg-[rgba(0,0,0,0.363)] h-screen w-full overflow-hidden;
+    z-index: 100;
+}
+
+.cart-conteiner {
+    @apply absolute right-0 w-[90%] h-screen flex max-w-[417px] flex-col justify-between items-start bg-white;
+}
+
+.cart-conteiner > div:first-child {
+    @apply flex flex-grow w-full gap-5 p-5 flex-col;
+}
+
+.cart-conteiner > div:last-child {
+    @apply p-5 border-t w-full flex flex-row justify-between items-center gap-[14px];
+}
+
+.cart-conteiner > div h3 {
+    @apply flex justify-between border-b pb-5 items-center;
+}
+
+.c-prod {
+    @apply flex-grow;
+}
+
+.c-prod ul {
+    @apply flex flex-col gap-[10px] overflow-y-auto overflow-x-hidden h-[74vh] !important;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.item {
+    @apply flex gap-2.5 items-center justify-start;
+}
+
+.it-item {
+    @apply overflow-hidden flex-grow;
+}
+
+.it-img {
+    @apply w-[108px] h-[105px] rounded-lg overflow-hidden bg-yellowAccent !important;
+}
+
+.item img {
+    @apply w-full;
+}
+
+.it-price {
+    @apply flex gap-2.5;
+}
+.it-price :last-child {
+    @apply text-yellowAccent text-sm;
+}
+
+/*Button cart*/
+.c-btn {
+    @apply border border-gray-800 p-1.5 w-full rounded-full flex justify-center items-center;
+    transition: 0.3s;
+}
+.c-btn:hover {
+    @apply border border-yellowAccent bg-yellowAccent text-white ;
+}

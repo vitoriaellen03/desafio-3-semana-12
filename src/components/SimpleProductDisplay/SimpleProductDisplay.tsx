@@ -64,7 +64,7 @@ const SimpleProductDisplay = () => {
                     />
                     <h4 className="name">{product.name}</h4>
                     <p>{product.short_description}</p>
-                    <p className="price">${product.price}</p>
+                    <p className="price">Rs{product.price}</p>
                   </div>
                   <div>
                     <button onClick={() => handleAddToCart(product)}>

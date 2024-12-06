@@ -14,7 +14,9 @@ const HomePage = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
           </div>
           <div>
+            <button>
             <Link to='/shop'>Buy Now</Link>
+            </button>
           </div>
         </section>
       </main>
