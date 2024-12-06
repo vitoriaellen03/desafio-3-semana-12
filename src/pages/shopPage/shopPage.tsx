@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import data from "../../../db.json";
+import { Link } from "react-router-dom";
 
 const ShopPage = () => {
   const [products, setProducts] = useState(data.products);
@@ -56,7 +57,7 @@ const ShopPage = () => {
       }
 
       setCart(updatedCart);
-      localStorage.setItem('cart', JSON.stringify(updatedCart));
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
       setLoading(false);
 
       window.location.reload();
@@ -221,16 +222,12 @@ const ShopPage = () => {
           ) : currentProducts.length > 0 ? (
             currentProducts.map((product) => (
               <div className="product-gb" key={product.id}>
-                <img
-                  className="image"
-                  src={product.image}
-                  alt={product.name}
-                />
-                <h4 className="name">{product.name}</h4>
+                <Link to={`/shop/product/${product.id}`}>
+                  <img className="image" src={product.image} alt={product.name} />
+                  <h4 className="name">{product.name}</h4>
+                </Link>
                 <p>{product.short_description}</p>
                 <p className="price">${product.price}</p>
-
-
                 <div>
                   <button onClick={() => handleAddToCart(product)}>
                     Add to Cart

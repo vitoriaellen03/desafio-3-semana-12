@@ -25,20 +25,6 @@ const HomePage = () => {
         </section>
         <section>
           <SimpleCategories />
-          <div>
-            <div>
-              <img src="" alt="" />
-              <h3>Dining</h3>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <h3>Living</h3>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <h3>Bedroom</h3>
-            </div>
-          </div>
         </section>
       </section>
       <section>

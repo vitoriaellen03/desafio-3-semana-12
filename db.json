@@ -115,7 +115,7 @@
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -284,7 +284,7 @@
       "discount": 10
     },
     {
-      "id": "1",
+      "id": "148451",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
@@ -312,7 +312,7 @@
       "discount": 10
     },
     {
-      "id": "2",
+      "id": "2685168",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
@@ -342,7 +342,7 @@
       "discount": 15
     },
     {
-      "id": "3",
+      "id": "374129",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
@@ -372,13 +372,13 @@
       "discount": 5
     },
     {
-      "id": "4",
+      "id": "444225456",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -400,7 +400,7 @@
       "discount": 10
     },
     {
-      "id": "5",
+      "id": "555555554866",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
@@ -427,7 +427,7 @@
       "discount": 20
     },
     {
-      "id": "6",
+      "id": "666666666589",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
@@ -454,7 +454,7 @@
       "discount": 5
     },
     {
-      "id": "7",
+      "id": "77777777777777774",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
@@ -477,7 +477,7 @@
       "discount": 10
     },
     {
-      "id": "8",
+      "id": "889999999",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
@@ -500,7 +500,7 @@
       "discount": 15
     },
     {
-      "id": "9",
+      "id": "99999999",
       "name": "Wardrobe Closet",
       "price": 550,
       "description": "A spacious wardrobe closet with multiple shelves and drawers.",
@@ -523,7 +523,7 @@
       "discount": 5
     },
     {
-      "id": "10",
+      "id": "1065987",
       "name": "Dining Table with Chairs",
       "price": 800,
       "description": "A dining table set with six matching chairs for your dining area.",
@@ -547,7 +547,7 @@
       "discount": 10
     },
     {
-      "id": "1",
+      "id": "18714022",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
@@ -575,7 +575,7 @@
       "discount": 10
     },
     {
-      "id": "2",
+      "id": "4777772",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
@@ -605,7 +605,7 @@
       "discount": 15
     },
     {
-      "id": "3",
+      "id": "33333333333",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
@@ -635,13 +635,13 @@
       "discount": 5
     },
     {
-      "id": "4",
+      "id": "4589487",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -663,7 +663,7 @@
       "discount": 10
     },
     {
-      "id": "5",
+      "id": "55448",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
@@ -690,7 +690,7 @@
       "discount": 20
     },
     {
-      "id": "6",
+      "id": "64563005",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
@@ -717,7 +717,7 @@
       "discount": 5
     },
     {
-      "id": "7",
+      "id": "65897",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
@@ -740,7 +740,7 @@
       "discount": 10
     },
     {
-      "id": "8",
+      "id": "8916",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
@@ -763,7 +763,7 @@
       "discount": 15
     },
     {
-      "id": "9",
+      "id": "92234",
       "name": "Wardrobe Closet",
       "price": 550,
       "description": "A spacious wardrobe closet with multiple shelves and drawers.",
@@ -786,7 +786,7 @@
       "discount": 5
     },
     {
-      "id": "10",
+      "id": "1080",
       "name": "Dining Table with Chairs",
       "price": 800,
       "description": "A dining table set with six matching chairs for your dining area.",
@@ -810,7 +810,7 @@
       "discount": 10
     },
     {
-      "id": "1",
+      "id": "4501",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
@@ -838,7 +838,7 @@
       "discount": 10
     },
     {
-      "id": "2",
+      "id": "325",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
@@ -868,7 +868,7 @@
       "discount": 15
     },
     {
-      "id": "3",
+      "id": "347415",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
@@ -898,13 +898,13 @@
       "discount": 5
     },
     {
-      "id": "4",
+      "id": "43658",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -926,7 +926,7 @@
       "discount": 10
     },
     {
-      "id": "5",
+      "id": "5784",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
@@ -953,7 +953,7 @@
       "discount": 20
     },
     {
-      "id": "6",
+      "id": "7896",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
@@ -969,7 +969,7 @@
           "White": 2
         }
       },
-      "category_id": "3",
+      "category_id": "344103",
       "sku": "KBF-006",
       "tags": [
         "bed frame",
@@ -980,7 +980,7 @@
       "discount": 5
     },
     {
-      "id": "7",
+      "id": "7121",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
@@ -1003,7 +1003,7 @@
       "discount": 10
     },
     {
-      "id": "8",
+      "id": "81483",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
@@ -1026,7 +1026,7 @@
       "discount": 15
     },
     {
-      "id": "9",
+      "id": "9446",
       "name": "Wardrobe Closet",
       "price": 550,
       "description": "A spacious wardrobe closet with multiple shelves and drawers.",
@@ -1049,7 +1049,7 @@
       "discount": 5
     },
     {
-      "id": "10",
+      "id": "10701",
       "name": "Dining Table with Chairs",
       "price": 800,
       "description": "A dining table set with six matching chairs for your dining area.",
@@ -1073,7 +1073,7 @@
       "discount": 10
     },
     {
-      "id": "1",
+      "id": "1180",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
@@ -1101,7 +1101,7 @@
       "discount": 10
     },
     {
-      "id": "2",
+      "id": "2002",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
@@ -1131,7 +1131,7 @@
       "discount": 15
     },
     {
-      "id": "3",
+      "id": "3333",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
@@ -1161,13 +1161,13 @@
       "discount": 5
     },
     {
-      "id": "4",
+      "id": "44779",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -1189,7 +1189,7 @@
       "discount": 10
     },
     {
-      "id": "5",
+      "id": "975",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
@@ -1216,7 +1216,7 @@
       "discount": 20
     },
     {
-      "id": "6",
+      "id": "4686",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
@@ -1243,7 +1243,7 @@
       "discount": 5
     },
     {
-      "id": "7",
+      "id": "747",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
@@ -1266,7 +1266,7 @@
       "discount": 10
     },
     {
-      "id": "8",
+      "id": "888",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
@@ -1289,7 +1289,7 @@
       "discount": 15
     },
     {
-      "id": "9",
+      "id": "999",
       "name": "Wardrobe Closet",
       "price": 550,
       "description": "A spacious wardrobe closet with multiple shelves and drawers.",
@@ -1312,7 +1312,7 @@
       "discount": 5
     },
     {
-      "id": "10",
+      "id": "1045",
       "name": "Dining Table with Chairs",
       "price": 800,
       "description": "A dining table set with six matching chairs for your dining area.",
@@ -1336,7 +1336,7 @@
       "discount": 10
     },
     {
-      "id": "1",
+      "id": "601",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
@@ -1364,7 +1364,7 @@
       "discount": 10
     },
     {
-      "id": "2",
+      "id": "201",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
@@ -1383,7 +1383,7 @@
           "Brown": 1
         }
       },
-      "category_id": "2",
+      "category_id": "602",
       "sku": "LSF-002",
       "tags": [
         "leather",
@@ -1394,7 +1394,7 @@
       "discount": 15
     },
     {
-      "id": "3",
+      "id": "36",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
@@ -1424,13 +1424,13 @@
       "discount": 5
     },
     {
-      "id": "4",
+      "id": "45",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
       "additional_information": "Comes in both brown and black colors.",
-      "image": "/assets/img/image4.png",
+      "image": "/assets/img/image4.jpg",
       "sizes": {
         "L": {
           "Brown": 5,
@@ -1452,7 +1452,7 @@
       "discount": 10
     },
     {
-      "id": "5",
+      "id": "55",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
@@ -1479,7 +1479,7 @@
       "discount": 20
     },
     {
-      "id": "6",
+      "id": "556",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
@@ -1506,7 +1506,7 @@
       "discount": 5
     },
     {
-      "id": "7",
+      "id": "56",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
@@ -1529,7 +1529,7 @@
       "discount": 10
     },
     {
-      "id": "8",
+      "id": "57",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
@@ -1552,7 +1552,7 @@
       "discount": 15
     },
     {
-      "id": "9",
+      "id": "58",
       "name": "Wardrobe Closet",
       "price": 550,
       "description": "A spacious wardrobe closet with multiple shelves and drawers.",
@@ -1575,7 +1575,7 @@
       "discount": 5
     },
     {
-      "id": "10",
+      "id": "59",
       "name": "Dining Table with Chairs",
       "price": 800,
       "description": "A dining table set with six matching chairs for your dining area.",
