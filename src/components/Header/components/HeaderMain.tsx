@@ -4,16 +4,25 @@ import { useLocation, Link } from "react-router-dom";
 const HeaderMain: React.FC = () => {
   const location = useLocation();
   const pathParts = location.pathname.split("/").filter(Boolean);
-
+  
   const [productName, setProductName] = useState<string>("");
 
   useEffect(() => {
-    if (location.pathname.includes("/product/")) {
-      const nameElement = document.querySelector(".product-name");
-      if (nameElement) {
-        setProductName(nameElement.textContent || "");
+    const fetchProductName = () => {
+      if (location.pathname.includes("/product/")) {
+        const nameElement = document.querySelector(".product-name");
+        if (nameElement) {
+          setProductName(nameElement.textContent || "");
+        }
       }
-    }
+    };
+
+    fetchProductName();
+    window.addEventListener("load", fetchProductName);
+
+    return () => {
+      window.removeEventListener("load", fetchProductName);
+    };
   }, [location.pathname]);
 
   const hideHeader =
@@ -27,10 +36,10 @@ const HeaderMain: React.FC = () => {
   const title =
     pathParts.includes("product") && pathParts.length > 1
       ? productName || pathParts[pathParts.length - 1]
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (char) => char.toUpperCase())
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, (char) => char.toUpperCase())
       : (pathParts[pathParts.length - 1] || "Home")
-        .replace(/\b\w/g, (char) => char.toUpperCase());
+          .replace(/\b\w/g, (char) => char.toUpperCase());
 
   const productId = pathParts[pathParts.length - 1];
   const productLink = `/shop/product/${productId}`;
@@ -61,22 +70,16 @@ const HeaderMain: React.FC = () => {
   return (
     <section>
       {isHomePage && (
-        <section className="home-section">
-          <div>
-            <h4>New Arrival</h4>
-            <h1>Discover Our New Collection</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-          </div>
-          <div>
-            <button>
-              <Link to='/shop'>Buy Now</Link>
-            </button>
-          </div>
-        </section>
+        <div className="home-section">
+          <h1>Welcome to the Home Page</h1>
+          <p>Here is some special content for the home page.</p>
+        </div>
       )}
 
       {isProductPage && (
         <div className="product-section">
+          <h1>Product Details</h1>
+          <p>Here is some special content for the product page.</p>
           <ul className="breadcrumbs">
             {breadcrumbs.map((crumb, index) => (
               <li key={index} className="breadcrumb-item">

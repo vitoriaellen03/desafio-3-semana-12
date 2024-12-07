@@ -1,0 +1,51 @@
+div:has(.cLoginPage) {
+    @apply bg-[#faf49a];
+}
+
+.cLoginPage {
+    @apply p-5 max-w-[600px] mx-auto;
+}
+
+.tabs {
+    @apply flex justify-around mb-5;
+}
+
+.tabs button {
+    @apply p-[20px_20px_10px] cursor-pointer text-[16px] transition-colors duration-300 ease-in-out;
+}
+
+.tabs button:hover {
+    @apply bg-white;
+}
+
+.activeTab {
+    @apply font-bold border-b-4;
+}
+
+.desactiveTab {
+    @apply text-[#ccc907];
+}
+
+.tblogin {
+    @apply bg-white min-h-[360px] rounded-[10px];
+}
+
+.aclogin, .acregister {
+    @apply p-7 flex flex-col items-center justify-between h-full gap-7;
+}
+
+.aclogin form, .acregister form {
+    @apply flex flex-col gap-5 w-full;
+}
+
+.aclogin form div, .acregister form div {
+    @apply w-full flex flex-col;
+}
+
+.aclogin form div input, .acregister form div input {
+    @apply leading-[30px] p-2 border-2 border-[#e6e6e6] rounded-[8px];
+}
+
+.aclogin button, .acregister button {
+    @apply bg-black p-2.5 rounded-[8px] text-white w-full;
+}

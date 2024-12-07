@@ -62,6 +62,10 @@
 .it-price {
     @apply flex gap-2.5;
 }
+.it-price input{
+    width: 30px;
+
+}
 .it-price :last-child {
     @apply text-yellowAccent text-sm;
 }

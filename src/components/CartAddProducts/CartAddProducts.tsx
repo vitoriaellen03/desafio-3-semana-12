@@ -71,6 +71,15 @@ const CartAddProduct = () => {
         setIsEdited(true);
     };
 
+    const updateProductQuantity = (productId, quantity) => {
+        const updatedCart = cart.map((item) => 
+            item.id === productId ? { ...item, quantity: Math.max(1, quantity) } : item
+        );
+        setCart(updatedCart);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+        setIsEdited(true);
+    };
+
     const toggleCart = () => {
         if (isOpen && isEdited) {
             window.location.reload();
@@ -111,9 +120,14 @@ const CartAddProduct = () => {
                                                     <img src={item.image} alt={item.name} />
                                                 </div>
                                                 <div className='it-item'>
-                                                    <p>{item.name}</p>
+                                                    <Link to={`/shop/product/${item.id}`}>{item.name}</Link>
                                                     <div className='it-price'>
-                                                        <p>{item.quantity}</p>
+                                                        <input 
+                                                            type="number" 
+                                                            value={item.quantity} 
+                                                            onChange={(e) => updateProductQuantity(item.id, parseInt(e.target.value, 10))}
+                                                            min="1"
+                                                        />
                                                         <span>X</span>
                                                         <p>Rs. {item.price * item.quantity}</p>
                                                     </div>

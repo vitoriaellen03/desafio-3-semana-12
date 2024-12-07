@@ -1,9 +1,18 @@
 /* Header */
 .c-header {
     @apply flex flex-col bg-white content-center items-center justify-center py-5 px-2;
-    position: sticky; 
+    position: sticky;
     top: 0;
 }
+
+.c-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 
 .header-navbar {
 
@@ -32,7 +41,7 @@
     @apply flex gap-5 content-center justify-center items-center;
 }
 
-.devices-links > img {
+.devices-links>img {
     width: 20px;
 }
 
@@ -132,10 +141,11 @@
         @apply order-1;
     }
 
-    .options-links {
+    .nav-menu .options-links {
         @apply flex flex-col flex-nowrap justify-center items-start gap-[75px];
     }
 }
+
 /**/
 
 
@@ -145,7 +155,7 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/img/bg.sec.jpg");
 }
 
-div:has(#c-shop-page) .header-navgatepage   {
+div:has(#c-shop-page) .header-navgatepage {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/img/bg.main.png");
 }
 
