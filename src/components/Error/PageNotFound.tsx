@@ -1,11 +1,15 @@
 import React from 'react';
+import './Error.css';
 
 const PageNotFound: React.FC = () => {
   return (
-    <div>
-      <h1>404 - Página Não Encontrada</h1>
-      <p>A página que você está procurando não existe ou está incorreta.</p>
-    </div>
+    <>
+      <div className="error-page">
+        <i class='bx bx-error-circle'></i>
+        <h1>404 - Page Not Found</h1>
+        <p>The page you are looking for does not exist or is incorrect.</p>
+      </div>
+    </>
   );
 };
 

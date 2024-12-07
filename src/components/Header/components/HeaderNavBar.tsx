@@ -24,7 +24,7 @@ const HeaderNavbar = () => {
   const isActive = windowWidth <= 768 ? isMenuOpen : false;
 
   return (
-    <div className="header-navbar conteiner">
+    <div className="header-navbar sec-conteiner">
       <section>
         <Logo />
       </section>

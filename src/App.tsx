@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import RoutesConfig from './RoutesConfig';
 import Footer from './components/Footer/Footer';
 import { Link } from 'react-router-dom';
+import './index.css';
 
 const App: React.FC = () => {
   const { user } = useUser();
@@ -18,11 +19,17 @@ const App: React.FC = () => {
   }, [user]);
 
   return (
-    <>
+    <div className="container">
       <Header />
-      <RoutesConfig />
+      <div className="routes-container">
+        <div className='cont-conteiner'>
+          <div className='sec-conteiner'>
+            <RoutesConfig />
+          </div>
+        </div>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

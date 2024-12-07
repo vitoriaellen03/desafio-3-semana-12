@@ -1,26 +1,17 @@
 .spinner {
-    position: fixed;
-    z-index: 10;
-    background: #ffffff9f;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @apply fixed z-10 bg-white/60 top-0 right-0 left-0 h-screen w-full flex justify-center items-center;
+}
+
+.loader {
+  @apply border-[8px] border-gray-200 border-t-[8px] border-t-[#B88E2F] rounded-full w-[50px] h-[50px];
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
   }
-  
-  .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #B88E2F;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 0.5s linear infinite;
+  100% {
+      transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+}

@@ -150,9 +150,13 @@ div:has(#c-shop-page) .header-navgatepage   {
 }
 
 .h-main {
-    @apply z-10 flex flex-col items-center justify-center gap-2.5;
+    @apply flex flex-col items-center justify-center gap-2.5;
 }
 
 .breadcrumbs {
     @apply flex gap-2.5;
+}
+
+.bx-log-out {
+    font-size: 26px;
 }

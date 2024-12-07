@@ -74,3 +74,7 @@
 .c-btn:hover {
     @apply border border-yellowAccent bg-yellowAccent text-white ;
 }
+
+.add-qt {
+    width: 30px;
+}

@@ -21,7 +21,7 @@ const UserDeviceLinks = () => {
         {isLoggedIn ? (
           <li className="dvc">
             <button onClick={handleLogout}>
-              <box-icon name='log-out'></box-icon>
+              <i className='bx bx-log-out' style={{ color: '#333333' }}></i>
             </button>
           </li>
         ) : (
