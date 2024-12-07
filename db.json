@@ -1618,6 +1618,11 @@
       "firstName": "teste",
       "email": "vitoriaellenfreireazevedo2015@gmail.com",
       "password": "vitoria321546@"
+    },
+    {
+      "id": "84d2",
+      "email": "user1s@example.com",
+      "password": "@Password123"
     }
   ]
 }

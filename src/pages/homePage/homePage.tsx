@@ -6,20 +6,6 @@ import SimpleCategories from "../../components/SimpleCategories/SimpleCategories
 const HomePage = () => {
   return (
     <>
-      <main>
-        <section>
-          <div>
-            <h4>New Arrival</h4>
-            <h1>Discover Our New Collection</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-          </div>
-          <div>
-            <button>
-            <Link to='/shop'>Buy Now</Link>
-            </button>
-          </div>
-        </section>
-      </main>
       <section>
         <section>
           <h2>Browse The Range</h2>

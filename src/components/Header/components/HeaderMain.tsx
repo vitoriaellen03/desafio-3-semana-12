@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 
 const HeaderMain: React.FC = () => {
   const location = useLocation();
   const pathParts = location.pathname.split("/").filter(Boolean);
+
+  const [productName, setProductName] = useState<string>("");
+
+  useEffect(() => {
+    if (location.pathname.includes("/product/")) {
+      const nameElement = document.querySelector(".product-name");
+      if (nameElement) {
+        setProductName(nameElement.textContent || "");
+      }
+    }
+  }, [location.pathname]);
 
   const hideHeader =
     pathParts[0] === "product" && pathParts.length === 1 ||
@@ -15,11 +26,14 @@ const HeaderMain: React.FC = () => {
 
   const title =
     pathParts.includes("product") && pathParts.length > 1
-      ? pathParts[pathParts.length - 1]
-          .replace(/-/g, " ")
-          .replace(/\b\w/g, (char) => char.toUpperCase())
+      ? productName || pathParts[pathParts.length - 1]
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase())
       : (pathParts[pathParts.length - 1] || "Home")
-          .replace(/\b\w/g, (char) => char.toUpperCase());
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+
+  const productId = pathParts[pathParts.length - 1];
+  const productLink = `/shop/product/${productId}`;
 
   const breadcrumbs = [
     { label: "Home", link: "/" },
@@ -29,8 +43,8 @@ const HeaderMain: React.FC = () => {
         ...(pathParts.includes("product") && pathParts.length > 1
           ? [
             {
-              label: title,
-              link: location.pathname,
+              label: productName || title,
+              link: productLink,
             },
           ]
           : []),
@@ -42,23 +56,27 @@ const HeaderMain: React.FC = () => {
   ];
 
   const isHomePage = location.pathname === "/";
+  const isProductPage = location.pathname.includes("/product/");
 
   return (
     <section>
-      {!isHomePage && !hideHeader && (
-        <div className="header-navgatepage">
-          <div className="h-main">
-          {location.pathname !== "/home" &&
-            location.pathname !== "/error" &&
-            location.pathname !== "/protected-error" &&
-            !location.pathname.includes("/product/") &&
-            !location.pathname.includes("/shop/product/") && (
-              
-              <>
-                <img src="../../assets/img/logo.svg" alt="logo for site" className="logo" />
-                <h2 className="title-page">{title}</h2>
-              </>
-            )}
+      {isHomePage && (
+        <section className="home-section">
+          <div>
+            <h4>New Arrival</h4>
+            <h1>Discover Our New Collection</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          </div>
+          <div>
+            <button>
+              <Link to='/shop'>Buy Now</Link>
+            </button>
+          </div>
+        </section>
+      )}
+
+      {isProductPage && (
+        <div className="product-section">
           <ul className="breadcrumbs">
             {breadcrumbs.map((crumb, index) => (
               <li key={index} className="breadcrumb-item">
@@ -69,6 +87,32 @@ const HeaderMain: React.FC = () => {
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {!isHomePage && !hideHeader && (
+        <div className="header-navgatepage">
+          <div className="h-main">
+            {location.pathname !== "/home" &&
+              location.pathname !== "/error" &&
+              location.pathname !== "/protected-error" &&
+              !location.pathname.includes("/product/") &&
+              !location.pathname.includes("/shop/product/") && (
+                <>
+                  <img src="../../assets/img/logo.svg" alt="logo for site" className="logo" />
+                  <h2 className="title-page">{title}</h2>
+                </>
+              )}
+            <ul className="breadcrumbs">
+              {breadcrumbs.map((crumb, index) => (
+                <li key={index} className="breadcrumb-item">
+                  <Link to={crumb.link} className="breadcrumb-link">
+                    {crumb.label}
+                  </Link>
+                  {index < breadcrumbs.length - 1 && " > "}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
