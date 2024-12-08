@@ -3,6 +3,7 @@
     @apply flex flex-col bg-white content-center items-center justify-center py-5 px-2;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .c-header.fixed {
@@ -13,9 +14,7 @@
     z-index: 10;
 }
 
-
 .header-navbar {
-
     @apply flex flex-nowrap items-center justify-between w-full;
 }
 
@@ -24,17 +23,13 @@
     @apply flex flex-nowrap items-center justify-between gap-1;
 }
 
-
-/**/
-
-/*Nav-links*/
+/* Nav-links */
 .logo img {
     @apply max-w-full h-auto mt-[-6px] h-[32px];
 }
 
 .options-links {
-    display: flex;
-    gap: 75px;
+    @apply flex gap-[75px];
 }
 
 .devices-links {
@@ -45,9 +40,7 @@
     width: 20px;
 }
 
-/**/
-
-/*hamburguer menu*/
+/* Hamburger Menu */
 .hamburger {
     @apply cursor-pointer z-50 text-xl block;
 }
@@ -67,7 +60,6 @@
 .nav-menu.active {
     @apply flex absolute flex-col justify-center items-start bg-white w-full m-0 right-0 max-h-screen py-5 px-2;
 }
-
 
 .nav-menu ul li {
     @apply opacity-0;
@@ -117,7 +109,6 @@
         animation: none;
         @apply opacity-100 translate-x-0;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -146,7 +137,6 @@
     }
 }
 
-/**/
 
 
 /*Header main Navgate*/
@@ -259,11 +249,12 @@ div:has(#c-shop-page) .header-navgatepage {
     letter-spacing: 3px;
 }
 
-.btn-main {
+.btnmain {
     @apply bg-yellowAccent text-white p-[15px_50px] transition duration-200;
+    font-weight: 600;
 }
 
-.btn-main:hover {
+.btnmain:hover {
     @apply bg-white text-yellowAccent;
 }
 

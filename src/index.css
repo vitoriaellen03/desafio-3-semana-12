@@ -44,9 +44,10 @@ h4 {
     @apply text-lg sm:text-xl md:text-2xl;
 }
 
-h5 {
+h5, .price {
     @apply text-base sm:text-lg md:text-xl;
 }
+
 /**/
 
 /*Overflow*/
@@ -78,4 +79,78 @@ a.link {
 /* Cont-container */
 .cont-conteiner {
     @apply flex flex-col items-center justify-center;
+}
+
+/* Products container */
+.products {
+    @apply grid grid-cols-4 gap-5 w-full justify-items-center relative;
+}
+
+/* Product Box */
+.product-gb {
+    @apply bg-[#F4F5F7] text-left w-full max-w-[300px] overflow-hidden relative z-[1];
+}
+
+/* Product Image */
+.product-image {
+    @apply w-full object-cover;
+}
+
+/* Group Content */
+.group {
+    @apply p-5 flex flex-col gap-2.5;
+}
+/* Product Price Hover */
+.product-price {
+    display: none;
+}
+
+.product-gb:hover .product-price {
+    @apply p-5 flex gap-5 flex-col items-center justify-center h-full w-full bg-[#33333396] absolute top-0 left-0 z-[2];
+}
+
+/* Show More Button */
+.show-more {
+    @apply border border-[#B88E2F] text-[#B88E2F] py-2.5 px-12 transition-all duration-200 relative z-[1];
+}
+
+.show-more:hover {
+    @apply border-[#B88E2F] bg-[#B88E2F] text-white;
+}
+
+/* Add Cart Button */
+.btncart {
+    @apply font-semibold bg-white py-2.5 px-7 text-[#B88E2F] transition-all duration-200 relative z-[2];
+}
+
+.btncart:hover {
+    @apply bg-[#B88E2F] text-white;
+}
+
+
+.hoverbtns {
+    @apply text-white gap-2.5 flex;
+}
+
+.hoverbtns :first-child::before {
+    margin-right: 5px;
+    @apply text-white;
+}
+
+.short-description {
+    @apply text-[#898989];
+}
+
+.price {
+    @apply font-semibold;
+}
+
+/* Columns */
+@media (max-width: 1325px) {
+    .products {
+        @apply grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] p-5;
+    }
+    .c-fill-shop .sec-conteiner {
+        @apply p-5;
+    }
 }

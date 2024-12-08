@@ -1,0 +1,21 @@
+/* Shop Page CSS */
+#c-shop-page {
+    @apply flex flex-col gap-[30px];
+}
+
+.sec-conteiner:has(#c-shop-page) {
+    @apply max-w-full;
+}
+
+.pagination {
+    @apply flex flex-wrap justify-center items-center p-[40px] gap-[20px];
+}
+
+.pagination button {
+    @apply p-[25px] leading-[10px] h-[60px] bg-bgSec rounded-[10px];
+}
+
+.pagination button.active,
+.pagination button:hover {
+    @apply bg-yellowAccent text-white;
+}

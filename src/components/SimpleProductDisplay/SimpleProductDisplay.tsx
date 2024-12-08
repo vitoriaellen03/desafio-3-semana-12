@@ -47,7 +47,7 @@ const SimpleProductDisplay = () => {
 
 
   return (
-    <div>
+    <div className="aling-center">
       {loading ? (
         <LoadingSpinner />
       ) : (
@@ -55,29 +55,37 @@ const SimpleProductDisplay = () => {
           {products.length > 0 ? (
             products.map((product) => (
               <div className="product-gb" key={product.id}>
-                <Link to={`/shop/product/${product.id}`}>
-                  <div>
-                    <img
-                      className="image"
-                      src={product.image}
-                      alt={product.name}
-                    />
-                    <h4 className="name">{product.name}</h4>
-                    <p>{product.short_description}</p>
-                    <p className="price">Rs. {product.price}</p>
+                    <Link to={`/shop/product/${product.id}`}>
+                      <img className="product-image" src={product.image} alt={product.name} />
+
+                      <div className="group">
+                        <h4 className="product-name">{product.name}</h4>
+                        <p className="short-description">{product.short_description}</p>
+                        <p className="price">Rs. {product.price}</p>
+
+                      </div>
+                      <div className="product-price">
+                        <button className="btncart" onClick={() => handleAddToCart(product)}>
+                          Add to Cart
+                        </button>
+                        <div className="hoverbtns">
+                          <button>
+                            <i className="bx bxs-share-alt"></i>
+                            Share
+                          </button>
+                          <button>
+                            <i className="bx bxs-bar-chart-alt-2"></i>
+                            Compare
+                          </button>
+                          <button>
+                            <i class='bx bx-heart' ></i>
+                            Like
+                          </button>
+                        </div>
+
+                      </div>
+                    </Link>
                   </div>
-                  <div>
-                    <button onClick={() => handleAddToCart(product)}>
-                      Add to Cart
-                    </button>
-                    <div>
-                      <button>Share</button>
-                      <button>Compare</button>
-                      <button>Like</button>
-                    </div>
-                  </div>
-                </Link>
-              </div>
             ))
           ) : (
             <p>No products available.</p>

@@ -6,6 +6,7 @@ import RoutesConfig from './RoutesConfig';
 import Footer from './components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import './index.css';
+import 'boxicons';
 
 const App: React.FC = () => {
   const { user } = useUser();

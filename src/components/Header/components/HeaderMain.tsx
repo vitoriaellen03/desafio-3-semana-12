@@ -67,7 +67,7 @@ const HeaderMain: React.FC = () => {
 
   const isHomePage = location.pathname === "/";
   const isProductPage = location.pathname.includes("/product/");
-  const isShopPage = location.pathname === "/shop"; // Verifica se está na página shop
+  const isShopPage = location.pathname === "/shop"; 
 
   return (
     <section>
@@ -81,7 +81,7 @@ const HeaderMain: React.FC = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
               </div>
               <div>
-                <Link to='/shop' className="btn-main">Buy Now</Link>
+                <Link to='/shop' className="btnmain">Buy Now</Link>
               </div>
             </div>
           </div>
@@ -132,8 +132,6 @@ const HeaderMain: React.FC = () => {
         </div>
       )}
 
-      {isShopPage && <FilterShop />
-      }
     </section>
   );
 };

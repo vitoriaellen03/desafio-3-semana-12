@@ -16,7 +16,7 @@ const SimpleCategories = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {loading ? (
         <LoadingSpinner />
       ) : categories.length > 0 ? (
@@ -35,7 +35,7 @@ const SimpleCategories = () => {
       ) : (
         <p>No categories available.</p>
       )}
-    </div>
+    </>
   );
 };
 
