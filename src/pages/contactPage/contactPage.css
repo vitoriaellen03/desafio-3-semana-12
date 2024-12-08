@@ -13,11 +13,11 @@
 }
 
 .contact-info {
-    @apply flex flex-wrap;
+    @apply flex flex-wrap gap-[20px];
 }
 
 .contact-info .col {
-    @apply w-[50%] gap-[40px] flex flex-col;
+    @apply w-[calc(50%-20px)] gap-[40px] flex flex-col;
 }
 
 .info-item {
@@ -45,6 +45,11 @@
 
 .c-form button:only-of-type:hover {
     @apply bg-white text-[#B88E2F] border-[#B88E2F];
+}
+@media (max-width: 1350px){
+    .contact-page {
+        @apply p-[20px] py-[80px];
+    }
 }
 
 @media (max-width: 1050px) {
