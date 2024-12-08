@@ -14,7 +14,7 @@ export default {
         greenAccent: '#2EC1AC',
         bgMain: '#FFF3E3',
         bgNav: '#F9F1E7',
-        bgSec: '#FCF8F3',
+        bgSec: '#FAF3EA',
       },
     },
   },

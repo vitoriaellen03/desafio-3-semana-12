@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import NavLinks from '../Header/components/NavLinks';
 import HelpLinks from './components/HelpLinks';
 import './Footer.css';
+import FooterMain from './components/FooterMain';
 
 const Footer = () => {
   return (
+    <>
+    <FooterMain />
     <footer className="footer" >
       <div className="cont-conteiner">
       <div className="sec-conteiner">
@@ -82,6 +85,7 @@ const Footer = () => {
       </div>
       </div>
     </footer>
+    </>
   );
 };
 

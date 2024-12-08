@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import data from "../../../db.json";
 import { Link } from "react-router-dom";
+import FilterShop from "./FilterShop"; // Importando o FilterShop
 
 const ShopPage = () => {
   const [products, setProducts] = useState(data.products);
@@ -28,7 +29,7 @@ const ShopPage = () => {
     }
   }, [cart]);
 
-  const filterByCategory = (categoryId) => {
+  const filterByCategory = (categoryId: string) => {
     setLoading(true);
     setTimeout(() => {
       if (categoryId) {
@@ -88,7 +89,7 @@ const ShopPage = () => {
     }
   };
 
-  const goToPage = (pageNumber) => {
+  const goToPage = (pageNumber: number) => {
     if (pageNumber !== currentPage) {
       setLoading(true);
       setTimeout(() => {
@@ -159,59 +160,19 @@ const ShopPage = () => {
 
   return (
     <div id="c-shop-page">
-      <div>
-        <button onClick={() => setShowFilterPopup(true)}>
-          <img src="../../../../../assets/img/filter.svg" alt="" />
-          Filter
-        </button>
-      </div>
-
-      {showFilterPopup && (
-        <div>
-          <div>
-            <h3>Filter by Category</h3>
-            <button onClick={() => filterByCategory("")}>All Categories</button>
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => filterByCategory(category.id)}
-              >
-                {category.name}
-              </button>
-            ))}
-            <button onClick={() => setShowFilterPopup(false)}>Close</button>
-          </div>
-        </div>
-      )}
-
-      <div>
-        <label>
-          Products per Page:
-          <input
-            type="number"
-            value={inputValue}
-            onChange={handleProductsPerPageChange}
-            min="0"
-          />
-        </label>
-      </div>
-
-      <div>
-        <p>
-          Showing {indexOfFirstProduct + 1}–{indexOfLastProduct} of {products.length} results
-        </p>
-      </div>
-
-      <div>
-        <label>
-          Sort by Price:
-          <select value={sortOrder} onChange={handleSortChange}>
-            <option value="default">Default</option>
-            <option value="asc">Low to High</option>
-            <option value="desc">High to Low</option>
-          </select>
-        </label>
-      </div>
+      <FilterShop
+        showFilterPopup={showFilterPopup}
+        setShowFilterPopup={setShowFilterPopup}
+        categories={categories}
+        filterByCategory={filterByCategory}
+        inputValue={inputValue}
+        handleProductsPerPageChange={handleProductsPerPageChange}
+        sortOrder={sortOrder}
+        handleSortChange={handleSortChange}
+        indexOfFirstProduct={indexOfFirstProduct}
+        indexOfLastProduct={indexOfLastProduct}
+        productsLength={products.length}
+      />
 
       {loading ? (
         <LoadingSpinner />
@@ -224,52 +185,48 @@ const ShopPage = () => {
               <div className="product-gb" key={product.id}>
                 <Link to={`/shop/product/${product.id}`}>
                   <div>
-                    <img className="image" src={product.image} alt={product.name} />
-                    <h4 className="name">{product.name}</h4>
-                    <p>{product.short_description}</p>
-                    <p className="price">Rs{product.price}</p>
+                    <img className="product-image" src={product.image} alt={product.name} />
                   </div>
-                  <div>
-                    <button onClick={() => handleAddToCart(product)}>
-                      Add to Cart
-                    </button>
-                    <div>
-                      <button>Share</button>
-                      <button>Compare</button>
-                      <button>Like</button>
-                    </div>
+                  <div className="product-name">
+                    <p>{product.name}</p>
                   </div>
                 </Link>
+                <div className="product-price">
+                  <p>Rs. {product.price}</p>
+                  <div className="hoverbtns">
+                    <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                    <div className="btns">
+                      <button >Share</button>
+                      <button >Compare</button>
+                      <button >Like</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))
           ) : (
             <p>No products found.</p>
           )}
-
-          <div>
-            {currentPage > 1 && (
-              <button onClick={prevPage}>
-                Prev
-              </button>
-            )}
-
-            {generatePageNumbers().map((pageNumber) => (
-              <button
-                key={pageNumber}
-                onClick={() => goToPage(pageNumber)}
-              >
-                {pageNumber}
-              </button>
-            ))}
-
-            {currentPage < totalPages && (
-              <button onClick={nextPage}>
-                Next
-              </button>
-            )}
-          </div>
         </div>
       )}
+
+      <div className="pagination">
+        <button onClick={prevPage} disabled={currentPage === 1}>
+          Previous
+        </button>
+        {generatePageNumbers().map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => goToPage(pageNumber)}
+            className={pageNumber === currentPage ? "active" : ""}
+          >
+            {pageNumber}
+          </button>
+        ))}
+        <button onClick={nextPage} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
     </div>
   );
 };

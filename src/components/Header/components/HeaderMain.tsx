@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+import FilterShop from "../../../pages/shopPage/FilterShop";
 
 const HeaderMain: React.FC = () => {
   const location = useLocation();
   const pathParts = location.pathname.split("/").filter(Boolean);
-  
+
   const [productName, setProductName] = useState<string>("");
 
   useEffect(() => {
@@ -36,10 +37,10 @@ const HeaderMain: React.FC = () => {
   const title =
     pathParts.includes("product") && pathParts.length > 1
       ? productName || pathParts[pathParts.length - 1]
-          .replace(/-/g, " ")
-          .replace(/\b\w/g, (char) => char.toUpperCase())
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase())
       : (pathParts[pathParts.length - 1] || "Home")
-          .replace(/\b\w/g, (char) => char.toUpperCase());
+        .replace(/\b\w/g, (char) => char.toUpperCase());
 
   const productId = pathParts[pathParts.length - 1];
   const productLink = `/shop/product/${productId}`;
@@ -66,6 +67,7 @@ const HeaderMain: React.FC = () => {
 
   const isHomePage = location.pathname === "/";
   const isProductPage = location.pathname.includes("/product/");
+  const isShopPage = location.pathname === "/shop"; // Verifica se está na página shop
 
   return (
     <section>
@@ -77,19 +79,19 @@ const HeaderMain: React.FC = () => {
       )}
 
       {isProductPage && (
-        <div className="product-section">
-          <h1>Product Details</h1>
-          <p>Here is some special content for the product page.</p>
-          <ul className="breadcrumbs">
-            {breadcrumbs.map((crumb, index) => (
-              <li key={index} className="breadcrumb-item">
-                <Link to={crumb.link} className="breadcrumb-link">
-                  {crumb.label}
-                </Link>
-                {index < breadcrumbs.length - 1 && " > "}
-              </li>
-            ))}
-          </ul>
+        <div className="product-section cont-conteiner">
+          <div className="sec-conteiner">
+            <ul className="breadcrumbs">
+              {breadcrumbs.map((crumb, index) => (
+                <li key={index} className="breadcrumb-item">
+                  <Link to={crumb.link} className="breadcrumb-link">
+                    {crumb.label}
+                  </Link>
+                  {index < breadcrumbs.length - 1 && " > "}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
 
@@ -119,6 +121,9 @@ const HeaderMain: React.FC = () => {
           </div>
         </div>
       )}
+
+      {isShopPage && <FilterShop />
+      }
     </section>
   );
 };

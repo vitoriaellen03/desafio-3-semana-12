@@ -63,6 +63,7 @@ a.link {
 /* Container */
 .container {
     @apply flex flex-col h-screen w-full max-w-full;
+    overflow-x: hidden;
 }
 
 .routes-container {
