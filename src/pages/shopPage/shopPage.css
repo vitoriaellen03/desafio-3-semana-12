@@ -19,3 +19,7 @@
 .pagination button:hover {
     @apply bg-yellowAccent text-white;
 }
+
+.sec-conteiner:has(#c-shop-page) .products {
+    @apply grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] p-5;
+}

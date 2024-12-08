@@ -15,7 +15,8 @@
 
 /* Categories */
 .categories-grid {
-    @apply flex flex-wrap gap-[15px] w-full items-center justify-center;
+    @apply grid grid-cols-3 gap-[15px] w-full items-center justify-center ;
+    justify-items: center;
 }
 
 .category-card {
@@ -27,10 +28,15 @@
     font-size: 1.5rem;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
     .category-card {
         @apply max-w-[300px];
     }
+
     .category-name {
         font-weight: 600;
         font-size: 1.25rem;
@@ -40,3 +46,4 @@
 .sec-more {
     margin-top: 30px;
 }
+

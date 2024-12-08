@@ -148,7 +148,7 @@ a.link {
 /* Columns */
 @media (max-width: 1325px) {
     .products {
-        @apply grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] p-5;
+        @apply grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))];
     }
     .c-fill-shop .sec-conteiner {
         @apply p-5;
