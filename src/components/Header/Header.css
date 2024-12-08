@@ -228,3 +228,53 @@ div:has(#c-shop-page) .header-navgatepage {
 .t-fill {
     @apply flex gap-2.5 justify-between text-2xl;
 }
+
+/* Home page CSS */
+.home-section {
+    @apply bg-cover bg-center flex flex-col items-center justify-center;
+    background-image: url('../../../assets/img/bg.main.png');
+    height: calc(80vh - 76px);
+}
+
+.sec-main {
+    @apply p-[30px] max-w-[1300px] w-full flex flex-col items-end;
+}
+
+.cont-main {
+    @apply bg-bgMain p-[20px] rounded-[30px] flex flex-col justify-center max-w-[643px] gap-[40px];
+    height: 433px;
+}
+
+.items-main {
+    @apply flex flex-col gap-[10px] max-w-[480px];
+}
+
+.title-main {
+    @apply text-yellowAccent;
+}
+
+.subtitle-main {
+    font-weight: 500;
+    font-size:medium;
+    letter-spacing: 3px;
+}
+
+.btn-main {
+    @apply bg-yellowAccent text-white p-[15px_50px] transition duration-200;
+}
+
+.btn-main:hover {
+    @apply bg-white text-yellowAccent;
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        @apply h-auto;
+    }
+    .cont-main {
+        @apply max-w-full;
+    }
+    .sec-main{
+        @apply items-center;
+    }
+}

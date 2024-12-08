@@ -73,8 +73,18 @@ const HeaderMain: React.FC = () => {
     <section>
       {isHomePage && (
         <div className="home-section">
-          <h1>Welcome to the Home Page</h1>
-          <p>Here is some special content for the home page.</p>
+          <div className="sec-main">
+            <div className="cont-main">
+              <div className="items-main">
+                <h4 className="subtitle-main">New Arrival</h4>
+                <h1 className="title-main">Discover Our New Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+              </div>
+              <div>
+                <Link to='/shop' className="btn-main">Buy Now</Link>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
