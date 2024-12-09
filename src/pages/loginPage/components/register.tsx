@@ -10,7 +10,7 @@ const Register = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:5000/users');
+      const response = await axios.get('http://localhost:4000/users');
       const existingUser = response.data.find((user) => user.email === registerEmail);
 
       if (existingUser) {
@@ -23,7 +23,7 @@ const Register = () => {
         password: registerPassword,
       };
 
-      const registerResponse = await axios.post('http://localhost:5000/users', newUser);
+      const registerResponse = await axios.post('http://localhost:4000/users', newUser);
 
       if (registerResponse.status === 201) {
         localStorage.setItem('isLoggedIn', 'true');

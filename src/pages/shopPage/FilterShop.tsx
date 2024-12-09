@@ -47,6 +47,7 @@ const FilterShop: React.FC<FilterShopProps> = ({
                   <h4>Filter by Category</h4>
                   <button onClick={() => setShowFilterPopup(false)}><i class='bx bx-x-circle'></i></button>
                 </div>
+
                 <button onClick={() => filterByCategory("")}>All Categories</button>
                 {categories.map((category) => (
                   <button key={category.id} onClick={() => filterByCategory(category.id)}>
@@ -57,10 +58,12 @@ const FilterShop: React.FC<FilterShopProps> = ({
             </div>
           )}
 
+          <div className="grids-overv">
+            <img src="/assets/img/grid.png" alt="" />
+            <img src="/assets/img/list.png" alt="" />
+          </div>
 
-
-
-          <div>
+          <div className="show-prodss">
             <p>
               Showing {indexOfFirstProduct + 1}–{indexOfLastProduct} of {productsLength} results
             </p>

@@ -167,7 +167,7 @@ div:has(#c-shop-page) .header-navgatepage {
     
 }
 .product-section .sec-conteiner {
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .product-section .breadcrumb-item:not(:last-child) {

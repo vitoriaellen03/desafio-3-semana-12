@@ -28,7 +28,7 @@ Para rodar o projeto localmente, siga os seguintes passos:
     npm run json-server
     ```
 
-Após isso, o projeto estará rodando localmente. Acesse o site em [http://localhost:3000](http://localhost:3000) para visualizar o projeto em funcionamento.
+Após isso, o projeto estará rodando localmente. Acesse o site em [http://localhost:4000](http://localhost:4000) para visualizar o projeto em funcionamento.
 
 ## 📍 Definições do Projeto
 

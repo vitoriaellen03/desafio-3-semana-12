@@ -50,8 +50,8 @@ const ShopPage = () => {
       const existingProduct = cart.find((item) => item.id === product.id);
       const updatedCart = existingProduct
         ? cart.map((item) =>
-            item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-          )
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+        )
         : [...cart, { ...product, quantity: 1 }];
 
       setCart(updatedCart);
@@ -179,23 +179,63 @@ const ShopPage = () => {
               {productsPerPage === 0 ? (
                 <p>No products available.</p>
               ) : currentProducts.length > 0 ? (
-                currentProducts.map((product) => (
-                  <div className="product-gb" key={product.id}>
-                    <Link to={`/shop/product/${product.id}`}>
-                      <img className="product-image" src={product.image} alt={product.name} />
-                      <div className="group">
-                        <h4 className="product-name">{product.name}</h4>
-                        <p className="short-description">{product.short_description}</p>
-                        <p className="price">Rs. {product.price}</p>
-                      </div>
-                      <div className="product-price">
-                        <button className="btncart" onClick={() => handleAddToCart(product)}>
-                          Add to Cart
-                        </button>
-                      </div>
-                    </Link>
-                  </div>
-                ))
+                currentProducts.map((product) => {
+                  const discountPrice = product.price - (product.price * product.discount / 100);
+                  return (
+                    <div className="product-gb" key={product.id}>
+                      <Link to={`/shop/product/${product.id}`}>
+                        <img className="product-image" src={product.image} alt={product.name} />
+                        <div className="group">
+                          <h4 className="product-name">{product.name}</h4>
+                          <p className="short-description">{product.short_description}</p>
+                          <div className="price">
+                            {product.isNew === true ? (
+                              <>
+                                <div className="new-label">New</div>
+                                {product.discount > 0 ? (
+                                  <>
+                                    <div className="discounted-price">Rs. {(product.price - (product.price * product.discount) / 100).toFixed(2)}</div>
+                                    <div className="total-price">Rs. {product.price}</div>
+                                    <div className="discount-percentage">-{product.discount}%</div>
+                                  </>
+                                ) : (
+                                  <div className="total-price">Rs. {product.price}</div>
+                                )}
+                              </>
+                            ) : product.discount > 0 ? (
+                              <>
+                                <div className="discounted-price">Rs. {(product.price - (product.price * product.discount) / 100).toFixed(2)}</div>
+                                <div className="total-price">Rs. {product.price}</div>
+                                <div className="discount-percentage">-{product.discount}%</div>
+                              </>
+                            ) : (
+                              <div className="total-price">Rs. {product.price}</div>
+                            )}
+                          </div>
+                        </div>
+                        <div className="product-price">
+                          <button className="btncart" onClick={() => handleAddToCart(product)}>
+                            Add to Cart
+                          </button>
+                          <div className="hoverbtns">
+                            <button>
+                              <i className="bx bxs-share-alt"></i>
+                              Share
+                            </button>
+                            <button>
+                              <i className="bx bxs-bar-chart-alt-2"></i>
+                              Compare
+                            </button>
+                            <button>
+                              <i className="bx bx-heart"></i>
+                              Like
+                            </button>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })
               ) : (
                 <p>No products found.</p>
               )}

@@ -1,0 +1,108 @@
+/* checkoutPage.css */
+.checkout-page {
+    @apply flex justify-between flex-wrap gap-5 p-10 text-black;
+}
+
+.checkout-page .billing-details,
+.checkout-page .order-summary {
+    @apply p-5 flex-1 max-w-full;
+}
+
+.checkout-page .billing-details h2,
+.checkout-page .order-summary h2 {
+    @apply text-xl font-medium text-black;
+}
+
+.checkout-page .billing-details form {
+    @apply flex flex-col gap-5;
+}
+
+.checkout-page .billing-details .row {
+    @apply flex gap-5;
+}
+
+.checkout-page .billing-details .form-group {
+    @apply flex-1 flex flex-col gap-2;
+}
+
+.checkout-page .billing-details .form-group label {
+    @apply text-base font-medium text-gray-600;
+}
+
+.checkout-page .name {
+    @apply text-gray-500;
+}
+
+.checkout-page span.tot {
+    @apply text-2xl font-extrabold text-yellowAccent;
+}
+
+.checkout-page .billing-details .form-group input,
+.checkout-page .billing-details .form-group textarea {
+    @apply p-3 text-base border border-gray-300 rounded-md ;
+}
+
+.checkout-page .billing-details .form-group input:focus,
+.checkout-page .billing-details .form-group textarea:focus {
+    @apply outline-none border-yellowAccent;
+}
+
+.checkout-page .billing-details .form-group textarea {
+    @apply resize-none min-h-[80px];
+}
+
+.checkout-page .order-summary {
+    @apply max-w-[500px] flex flex-col gap-4;
+}
+
+.checkout-page .order-summary .product-list {
+    @apply flex flex-col gap-2.5;
+}
+
+.checkout-page .order-summary .product-item {
+    @apply flex justify-between;
+}
+
+.checkout-page .order-summary .product-item span {
+    @apply text-base;
+}
+
+.checkout-page .order-summary .price-section {
+    @apply flex justify-between text-base font-medium;
+}
+
+.price-section .dis {
+    @apply text-red-500;
+}
+
+.p-discount {
+    @apply text-red-500;
+}
+
+.checkout-page .order-summary button {
+    @apply p-3.5 text-base font-bold text-white bg-yellowAccent border-none rounded-md cursor-pointer uppercase transition-all duration-300 w-full;
+}
+
+.checkout-page .order-summary button:hover {
+    @apply bg-yellowAccent;
+}
+
+/* Responsive Design */
+@media (max-width: 930px) {
+    .checkout-page .billing-details .row {
+        @apply flex-col;
+    }
+
+    .checkout-page {
+        @apply flex-col;
+    }
+
+    .checkout-page .billing-details .form-group textarea {
+        @apply min-h-[60px];
+    }
+
+    .checkout-page .billing-details,
+    .checkout-page .order-summary {
+        @apply w-full max-w-full;
+    }
+}

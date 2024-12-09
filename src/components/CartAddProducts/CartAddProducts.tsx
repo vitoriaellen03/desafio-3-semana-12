@@ -91,6 +91,17 @@ const CartAddProduct = () => {
     const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
     const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
+    const getDiscount = (price, quantity, discount) => {
+        return (price * quantity * discount) / 100;
+    };
+
+    const getTotalDiscount = () => {
+        return cart.reduce((acc, item) => acc + getDiscount(item.price, item.quantity, item.discount || 0), 0);
+    };
+
+    const discountAmount = getTotalDiscount();
+    const totalWithDiscount = subtotal - discountAmount;
+
     return (
         <>
             <div className='c-cart' onClick={toggleCart}>
@@ -140,9 +151,17 @@ const CartAddProduct = () => {
                                     </ul>
                                 </div>
                             )}
-                            <p>
-                                <span>Subtotal: Rs. {subtotal.toFixed(2)}</span>
-                            </p>
+                            <div className='cart-total'>
+                                <p>
+                                    <span>Subtotal: Rs. {subtotal.toFixed(2)}</span>
+                                    {discountAmount > 0 && (
+                                        <span className='discount'>- Rs. {discountAmount.toFixed(2)} (Discount)</span>
+                                    )}
+                                </p>
+                                <p>
+                                    <span>Total: <span className="tot">Rs. {totalWithDiscount.toFixed(2)}</span></span>
+                                </p>
+                            </div>
                         </div>
                         <div>
                             <Link className='c-btn' to="/cart" onClick={() => setIsOpen(false)}>Cart</Link>

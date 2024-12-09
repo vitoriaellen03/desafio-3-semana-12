@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-import FilterShop from "../../../pages/shopPage/FilterShop";
 
 const HeaderMain: React.FC = () => {
+  
   const location = useLocation();
   const pathParts = location.pathname.split("/").filter(Boolean);
 
   const [productName, setProductName] = useState<string>("");
-
+  
   useEffect(() => {
     const fetchProductName = () => {
       if (location.pathname.includes("/product/")) {
@@ -67,7 +67,6 @@ const HeaderMain: React.FC = () => {
 
   const isHomePage = location.pathname === "/";
   const isProductPage = location.pathname.includes("/product/");
-  const isShopPage = location.pathname === "/shop"; 
 
   return (
     <section>
@@ -89,20 +88,7 @@ const HeaderMain: React.FC = () => {
       )}
 
       {isProductPage && (
-        <div className="product-section cont-conteiner">
-          <div className="sec-conteiner">
-            <ul className="breadcrumbs">
-              {breadcrumbs.map((crumb, index) => (
-                <li key={index} className="breadcrumb-item">
-                  <Link to={crumb.link} className="breadcrumb-link">
-                    {crumb.label}
-                  </Link>
-                  {index < breadcrumbs.length - 1 && " > "}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <div className="product-section cont-conteiner"></div>
       )}
 
       {!isHomePage && !hideHeader && (

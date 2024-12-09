@@ -21,21 +21,27 @@
   ],
   "products": [
     {
-      "id": "1",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -46,16 +52,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "2",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -76,16 +89,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "3",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -106,7 +125,8 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
       "id": "4",
@@ -114,8 +134,12 @@
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -134,7 +158,8 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
       "id": "5",
@@ -142,8 +167,12 @@
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -161,7 +190,8 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
       "id": "6",
@@ -169,8 +199,13 @@
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -188,7 +223,8 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
       "id": "7",
@@ -196,8 +232,12 @@
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -211,7 +251,8 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
       "id": "8",
@@ -219,8 +260,12 @@
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -234,71 +279,59 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
       "id": "9",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
-      "sizes": {
-        "L": {
-          "White": 2
-        }
-      },
-      "category_id": "3",
-      "sku": "WC-009",
-      "tags": [
-        "wardrobe",
-        "bedroom",
-        "storage"
+      "images": [
+        "/assets/img/image9.jpg"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
-    },
-    {
-      "id": "10",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Black": 6
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "BSS-009",
       "tags": [
-        "dining",
-        "furniture",
-        "set"
+        "bar stool",
+        "kitchen",
+        "furniture"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     },
     {
-      "id": "148451",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -309,16 +342,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "2685168",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -339,16 +379,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "374129",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -369,16 +415,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "444225456",
+      "id": "255",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -397,16 +448,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "555555554866",
+      "id": "245",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -424,16 +480,22 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "666666666589",
+      "id": "235",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -451,16 +513,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "77777777777777774",
+      "id": "225",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -474,16 +541,21 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "889999999",
+      "id": "215",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -497,71 +569,59 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
-      "id": "99999999",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "id": "205",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
-      "sizes": {
-        "L": {
-          "White": 2
-        }
-      },
-      "category_id": "3",
-      "sku": "WC-009",
-      "tags": [
-        "wardrobe",
-        "bedroom",
-        "storage"
+      "images": [
+        "/assets/img/image9.jpg"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
-    },
-    {
-      "id": "1065987",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Black": 6
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "BSS-009",
       "tags": [
-        "dining",
-        "furniture",
-        "set"
+        "bar stool",
+        "kitchen",
+        "furniture"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     },
     {
-      "id": "18714022",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -572,16 +632,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "4777772",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -602,16 +669,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "33333333333",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -632,16 +705,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "4589487",
+      "id": "256",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -660,16 +738,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "55448",
+      "id": "246",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -687,16 +770,22 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "64563005",
+      "id": "236",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -714,16 +803,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "65897",
+      "id": "226",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -737,16 +831,21 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "8916",
+      "id": "216",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -760,71 +859,59 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
-      "id": "92234",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "id": "206",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
-      "sizes": {
-        "L": {
-          "White": 2
-        }
-      },
-      "category_id": "3",
-      "sku": "WC-009",
-      "tags": [
-        "wardrobe",
-        "bedroom",
-        "storage"
+      "images": [
+        "/assets/img/image9.jpg"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
-    },
-    {
-      "id": "1080",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Black": 6
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "BSS-009",
       "tags": [
-        "dining",
-        "furniture",
-        "set"
+        "bar stool",
+        "kitchen",
+        "furniture"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     },
     {
-      "id": "4501",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -835,16 +922,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "325",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -865,16 +959,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "347415",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -895,16 +995,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "43658",
+      "id": "257",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -923,16 +1028,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "5784",
+      "id": "247",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -950,16 +1060,22 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "7896",
+      "id": "237",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -969,7 +1085,7 @@
           "White": 2
         }
       },
-      "category_id": "344103",
+      "category_id": "3",
       "sku": "KBF-006",
       "tags": [
         "bed frame",
@@ -977,16 +1093,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "7121",
+      "id": "227",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -1000,16 +1121,21 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "81483",
+      "id": "217",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -1023,71 +1149,59 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
-      "id": "9446",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "id": "207",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
-      "sizes": {
-        "L": {
-          "White": 2
-        }
-      },
-      "category_id": "3",
-      "sku": "WC-009",
-      "tags": [
-        "wardrobe",
-        "bedroom",
-        "storage"
+      "images": [
+        "/assets/img/image9.jpg"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
-    },
-    {
-      "id": "10701",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Black": 6
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "BSS-009",
       "tags": [
-        "dining",
-        "furniture",
-        "set"
+        "bar stool",
+        "kitchen",
+        "furniture"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     },
     {
-      "id": "1180",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -1098,16 +1212,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "2002",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -1128,16 +1249,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "3333",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -1158,16 +1285,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "44779",
+      "id": "258",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -1186,16 +1318,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "975",
+      "id": "248",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -1213,16 +1350,22 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "4686",
+      "id": "238",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -1240,16 +1383,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "747",
+      "id": "228",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -1263,16 +1411,21 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "888",
+      "id": "218",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -1286,71 +1439,59 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
-      "id": "999",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "id": "208",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
-      "sizes": {
-        "L": {
-          "White": 2
-        }
-      },
-      "category_id": "3",
-      "sku": "WC-009",
-      "tags": [
-        "wardrobe",
-        "bedroom",
-        "storage"
+      "images": [
+        "/assets/img/image9.jpg"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
-    },
-    {
-      "id": "1045",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Black": 6
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "BSS-009",
       "tags": [
-        "dining",
-        "furniture",
-        "set"
+        "bar stool",
+        "kitchen",
+        "furniture"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     },
     {
-      "id": "601",
+      "id": "185",
       "name": "Wooden Dining Table",
       "price": 450,
       "description": "A durable wooden dining table that seats up to six people.",
       "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from solid oak wood.",
       "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 5,
-          "Black": 3
+          "Brown": 1,
+          "Black": 2
         },
         "S": {
-          "Brown": 2,
-          "Black": 1
+          "Brown": 3,
+          "Black": 4
         }
       },
       "category_id": "1",
@@ -1361,16 +1502,23 @@
         "furniture"
       ],
       "share": "https://example.com/share/1",
-      "discount": 10
+      "discount": 30,
+      "isNew": false
     },
     {
-      "id": "201",
+      "id": "175",
       "name": "Leather Sofa",
       "price": 1200,
       "description": "A luxurious leather sofa with a modern design.",
       "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-quality leather.",
       "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 2
@@ -1383,7 +1531,7 @@
           "Brown": 1
         }
       },
-      "category_id": "602",
+      "category_id": "2",
       "sku": "LSF-002",
       "tags": [
         "leather",
@@ -1391,16 +1539,22 @@
         "living room"
       ],
       "share": "https://example.com/share/2",
-      "discount": 15
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "36",
+      "id": "165",
       "name": "Queen Bed Frame",
       "price": 800,
       "description": "A sturdy queen-sized bed frame with an elegant finish.",
       "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 250kg.",
       "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 4,
@@ -1421,16 +1575,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/3",
-      "discount": 5
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "45",
+      "id": "259",
       "name": "Dining Chair Set",
       "price": 220,
       "description": "A set of four dining chairs made from durable wood.",
       "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Comes in both brown and black colors.",
       "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 5,
@@ -1449,16 +1608,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/4",
-      "discount": 10
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "55",
+      "id": "249",
       "name": "Sectional Sofa",
       "price": 1500,
       "description": "A spacious sectional sofa perfect for living rooms.",
       "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made from high-density foam and fabric.",
       "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
       "sizes": {
         "L": {
           "Gray": 2
@@ -1476,16 +1640,22 @@
         "furniture"
       ],
       "share": "https://example.com/share/5",
-      "discount": 20
+      "discount": 0,
+      "isNew": false
     },
     {
-      "id": "556",
+      "id": "239",
       "name": "King Bed Frame",
       "price": 900,
       "description": "A robust king-sized bed frame with modern design.",
       "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Supports up to 300kg.",
       "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "White": 3,
@@ -1503,16 +1673,21 @@
         "furniture"
       ],
       "share": "https://example.com/share/6",
-      "discount": 5
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "56",
+      "id": "229",
       "name": "Dining Buffet",
       "price": 700,
       "description": "A stylish buffet for dining rooms with ample storage space.",
       "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Made of high-quality oak wood.",
       "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
           "Brown": 4
@@ -1526,16 +1701,21 @@
         "storage"
       ],
       "share": "https://example.com/share/7",
-      "discount": 10
+      "discount": 50,
+      "isNew": false
     },
     {
-      "id": "57",
+      "id": "219",
       "name": "Leather Recliner Chair",
       "price": 850,
       "description": "A recliner chair made of premium leather for ultimate relaxation.",
       "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "additional_information": "Includes a footrest and adjustable reclining position.",
       "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
       "sizes": {
         "L": {
           "Black": 4
@@ -1549,59 +1729,621 @@
         "living room"
       ],
       "share": "https://example.com/share/8",
-      "discount": 15
+      "discount": 10,
+      "isNew": false
     },
     {
-      "id": "58",
-      "name": "Wardrobe Closet",
-      "price": 550,
-      "description": "A spacious wardrobe closet with multiple shelves and drawers.",
-      "short_description": "Spacious wardrobe closet.",
-      "additional_information": "Perfect for organizing clothes and accessories.",
+      "id": "209",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
       "image": "/assets/img/image9.jpg",
+      "images": [
+        "/assets/img/image9.jpg"
+      ],
       "sizes": {
         "L": {
+          "Black": 6
+        }
+      },
+      "category_id": "1",
+      "sku": "BSS-009",
+      "tags": [
+        "bar stool",
+        "kitchen",
+        "furniture"
+      ],
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
+    },
+    {
+      "id": "186",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Brown": 1,
+          "Black": 2
+        },
+        "S": {
+          "Brown": 3,
+          "Black": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": [
+        "wooden",
+        "dining table",
+        "furniture"
+      ],
+      "share": "https://example.com/share/1",
+      "discount": 30,
+      "isNew": false
+    },
+    {
+      "id": "176",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": [
+        "leather",
+        "sofa",
+        "living room"
+      ],
+      "share": "https://example.com/share/2",
+      "discount": 0,
+      "isNew": false
+    },
+    {
+      "id": "165",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": [
+        "bed frame",
+        "bedroom",
+        "furniture"
+      ],
+      "share": "https://example.com/share/3",
+      "discount": 50,
+      "isNew": false
+    },
+    {
+      "id": "155",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": [
+        "chairs",
+        "dining",
+        "furniture"
+      ],
+      "share": "https://example.com/share/4",
+      "discount": 0,
+      "isNew": true
+    },
+    {
+      "id": "145",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": [
+        "sofa",
+        "living room",
+        "furniture"
+      ],
+      "share": "https://example.com/share/5",
+      "discount": 0,
+      "isNew": false
+    },
+    {
+      "id": "135",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
           "White": 2
         }
       },
       "category_id": "3",
-      "sku": "WC-009",
+      "sku": "KBF-006",
       "tags": [
-        "wardrobe",
+        "bed frame",
         "bedroom",
-        "storage"
+        "furniture"
       ],
-      "share": "https://example.com/share/9",
-      "discount": 5
+      "share": "https://example.com/share/6",
+      "discount": 0,
+      "isNew": true
     },
     {
-      "id": "59",
-      "name": "Dining Table with Chairs",
-      "price": 800,
-      "description": "A dining table set with six matching chairs for your dining area.",
-      "short_description": "Dining table set for six.",
-      "additional_information": "Made from high-quality wood with a glossy finish.",
-      "image": "/assets/img/image10.jpg",
+      "id": "125",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
       "sizes": {
         "L": {
-          "Brown": 4,
-          "Black": 2
+          "Brown": 4
         }
       },
       "category_id": "1",
-      "sku": "DT-010",
+      "sku": "DB-007",
       "tags": [
+        "buffet",
         "dining",
-        "furniture",
-        "set"
+        "storage"
       ],
-      "share": "https://example.com/share/10",
-      "discount": 10
+      "share": "https://example.com/share/7",
+      "discount": 50,
+      "isNew": false
+    },
+    {
+      "id": "115",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": [
+        "recliner",
+        "leather",
+        "living room"
+      ],
+      "share": "https://example.com/share/8",
+      "discount": 10,
+      "isNew": false
+    },
+    {
+      "id": "105",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
+      "image": "/assets/img/image9.jpg",
+      "images": [
+        "/assets/img/image9.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 6
+        }
+      },
+      "category_id": "1",
+      "sku": "BSS-009",
+      "tags": [
+        "bar stool",
+        "kitchen",
+        "furniture"
+      ],
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
+    },
+    {
+      "id": "187",
+      "name": "Wooden Dining Table",
+      "price": 450,
+      "description": "A durable wooden dining table that seats up to six people.",
+      "short_description": "Wooden dining table for six.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from solid oak wood.",
+      "image": "/assets/img/image1.jpg",
+      "images": [
+        "/assets/img/image1.jpg",
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Brown": 1,
+          "Black": 2
+        },
+        "S": {
+          "Brown": 3,
+          "Black": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "WDN-001",
+      "tags": [
+        "wooden",
+        "dining table",
+        "furniture"
+      ],
+      "share": "https://example.com/share/1",
+      "discount": 30,
+      "isNew": false
+    },
+    {
+      "id": "177",
+      "name": "Leather Sofa",
+      "price": 1200,
+      "description": "A luxurious leather sofa with a modern design.",
+      "short_description": "Elegant leather sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from high-quality leather.",
+      "image": "/assets/img/image2.jpg",
+      "images": [
+        "/assets/img/image2.jpg",
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 2
+        },
+        "M": {
+          "Black": 3,
+          "Brown": 2
+        },
+        "S": {
+          "Brown": 1
+        }
+      },
+      "category_id": "2",
+      "sku": "LSF-002",
+      "tags": [
+        "leather",
+        "sofa",
+        "living room"
+      ],
+      "share": "https://example.com/share/2",
+      "discount": 0,
+      "isNew": false
+    },
+    {
+      "id": "166",
+      "name": "Queen Bed Frame",
+      "price": 800,
+      "description": "A sturdy queen-sized bed frame with an elegant finish.",
+      "short_description": "Queen-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Supports up to 250kg.",
+      "image": "/assets/img/image3.jpg",
+      "images": [
+        "/assets/img/image3.jpg",
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "White": 4,
+          "Gray": 2
+        },
+        "XS": {
+          "White": 1
+        },
+        "S": {
+          "Gray": 3
+        }
+      },
+      "category_id": "3",
+      "sku": "QBF-003",
+      "tags": [
+        "bed frame",
+        "bedroom",
+        "furniture"
+      ],
+      "share": "https://example.com/share/3",
+      "discount": 50,
+      "isNew": false
+    },
+    {
+      "id": "156",
+      "name": "Dining Chair Set",
+      "price": 220,
+      "description": "A set of four dining chairs made from durable wood.",
+      "short_description": "Dining chairs for four.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Comes in both brown and black colors.",
+      "image": "/assets/img/image4.jpg",
+      "images": [
+        "/assets/img/image4.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Brown": 5,
+          "Black": 3
+        },
+        "S": {
+          "Brown": 2,
+          "Black": 1
+        }
+      },
+      "category_id": "1",
+      "sku": "DCS-004",
+      "tags": [
+        "chairs",
+        "dining",
+        "furniture"
+      ],
+      "share": "https://example.com/share/4",
+      "discount": 0,
+      "isNew": true
+    },
+    {
+      "id": "146",
+      "name": "Sectional Sofa",
+      "price": 1500,
+      "description": "A spacious sectional sofa perfect for living rooms.",
+      "short_description": "Spacious sectional sofa.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made from high-density foam and fabric.",
+      "image": "/assets/img/image5.jpg",
+      "images": [
+        "/assets/img/image5.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Gray": 2
+        },
+        "M": {
+          "Black": 3,
+          "Beige": 2
+        }
+      },
+      "category_id": "2",
+      "sku": "SS-005",
+      "tags": [
+        "sofa",
+        "living room",
+        "furniture"
+      ],
+      "share": "https://example.com/share/5",
+      "discount": 0,
+      "isNew": false
+    },
+    {
+      "id": "136",
+      "name": "King Bed Frame",
+      "price": 900,
+      "description": "A robust king-sized bed frame with modern design.",
+      "short_description": "King-sized bed frame.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Supports up to 300kg.",
+      "image": "/assets/img/image6.jpg",
+      "images": [
+        "/assets/img/image6.jpg",
+        "/assets/img/image7.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "White": 3,
+          "Gray": 4
+        },
+        "XS": {
+          "White": 2
+        }
+      },
+      "category_id": "3",
+      "sku": "KBF-006",
+      "tags": [
+        "bed frame",
+        "bedroom",
+        "furniture"
+      ],
+      "share": "https://example.com/share/6",
+      "discount": 0,
+      "isNew": true
+    },
+    {
+      "id": "126",
+      "name": "Dining Buffet",
+      "price": 700,
+      "description": "A stylish buffet for dining rooms with ample storage space.",
+      "short_description": "Dining buffet for extra storage.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made of high-quality oak wood.",
+      "image": "/assets/img/image7.jpg",
+      "images": [
+        "/assets/img/image7.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Brown": 4
+        }
+      },
+      "category_id": "1",
+      "sku": "DB-007",
+      "tags": [
+        "buffet",
+        "dining",
+        "storage"
+      ],
+      "share": "https://example.com/share/7",
+      "discount": 50,
+      "isNew": false
+    },
+    {
+      "id": "116",
+      "name": "Leather Recliner Chair",
+      "price": 850,
+      "description": "A recliner chair made of premium leather for ultimate relaxation.",
+      "short_description": "Luxurious leather recliner chair.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Includes a footrest and adjustable reclining position.",
+      "image": "/assets/img/image8.jpg",
+      "images": [
+        "/assets/img/image8.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 4
+        }
+      },
+      "category_id": "2",
+      "sku": "LRC-008",
+      "tags": [
+        "recliner",
+        "leather",
+        "living room"
+      ],
+      "share": "https://example.com/share/8",
+      "discount": 10,
+      "isNew": false
+    },
+    {
+      "id": "106",
+      "name": "Bar Stool Set",
+      "price": 150,
+      "description": "A set of three adjustable bar stools in sleek modern style.",
+      "short_description": "Set of three adjustable bar stools.",
+      "large_description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "additional_information": "Made with high-quality stainless steel base.",
+      "image": "/assets/img/image9.jpg",
+      "images": [
+        "/assets/img/image9.jpg"
+      ],
+      "sizes": {
+        "L": {
+          "Black": 6
+        }
+      },
+      "category_id": "1",
+      "sku": "BSS-009",
+      "tags": [
+        "bar stool",
+        "kitchen",
+        "furniture"
+      ],
+      "share": "https://example.com/share/9",
+      "discount": 20,
+      "isNew": false
     }
   ],
   "users": [
     {
-      "id": "1",
+      "id": "189",
       "firstName": "teste",
       "username": "user1",
       "email": "user1@example.com",
@@ -1611,6 +2353,11 @@
       "id": "ca5e",
       "email": "user1s@example.com",
       "password": "@Password123"
+    },
+    {
+      "id": "d984",
+      "email": "usuario2@example.com",
+      "password": "sadsadsa"
     }
   ]
 }

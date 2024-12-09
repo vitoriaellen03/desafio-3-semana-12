@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "json-server": "json-server --watch db.json --port 3000",
+    "json-server": "json-server --watch db.json --port 4000",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -13,12 +13,14 @@
   "dependencies": {
     "@clerk/clerk-expo": "^2.3.13",
     "@clerk/clerk-react": "^5.18.0",
-    "axios": "^1.7.8",
+    "axios": "^1.7.9",
     "boxicons": "^2.1.4",
     "expo-secure-store": "^14.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -26,12 +28,14 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "json-server": "^1.0.0-beta.3",
     "postcss": "^8.4.47",
+    "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.14",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",

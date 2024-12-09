@@ -1,5 +1,5 @@
 div:has(.cLoginPage) {
-    @apply bg-[#faf49a];
+    @apply bg-[#FFF3E3];
 }
 
 .cLoginPage {
@@ -23,7 +23,7 @@ div:has(.cLoginPage) {
 }
 
 .desactiveTab {
-    @apply text-[#ccc907];
+    @apply text-[#B88E2F];
 }
 
 .tblogin {
