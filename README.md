@@ -56,12 +56,12 @@ O projeto segue o layout disponibilizado no [Figma](https://www.figma.com/design
 - **JSON Server** para simulação do backend, criando uma API local.
 - **Clerk** para autenticação de usuários, garantindo uma navegação segura.
 - **ViaCEP** para preenchimento automático de endereços durante o processo de checkout.
-- **Splide** para a implementação do carrossel de produtos na página inicial.
+- **Splide** para a implementação do carrossel na página inicial.
 - **React Router** para navegação entre as páginas.
 
 ## ⚠️ Data de Entrega
 
-O projeto deve ser entregue até **09/12/2024**, às **17h30**. A apresentação terá duração máxima de **5 minutos**.
+O projeto deve ser entregue até **11/12/2024**, às **17h30**. A apresentação terá duração máxima de **5 minutos**.
 
 ## 📍 Instruções de Implantação
 
