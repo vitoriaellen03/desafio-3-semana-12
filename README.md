@@ -2,7 +2,7 @@
 
 ## 📍 Descrição do Desafio
 
-O desafio consiste na recriação das páginas do *Furniro*, um site de compras de móveis, com base em um design no Figma. O projeto deve ser desenvolvido de forma fiel ao layout fornecido, utilizando **HTML**, **CSS**, **JavaScript**, **TypeScript**, **React** e um framework de sua escolha (ex: **Tailwind CSS** ou **Bootstrap**). Este é um projeto individual e envolve funcionalidades como navegação, autenticação, carrinho de compras e integração com uma API para preencher dados automaticamente.
+O desafio consiste na recriação das páginas do *Furniro*, um site de compras de móveis, com base em um design no Figma. O projeto deve ser desenvolvido de forma fiel ao layout fornecido, utilizando **HTML**, **CSS**, **JavaScript**, **TypeScript**, **React** e frameworks e bibliotecas adicionais para facilitar o desenvolvimento e a funcionalidade do site. Este é um projeto individual e envolve funcionalidades como navegação, autenticação, carrinho de compras e integração com APIs para preencher dados automaticamente.
 
 ## 📍 Como Rodar o Projeto
 
@@ -38,9 +38,9 @@ O projeto segue o layout disponibilizado no [Figma](https://www.figma.com/design
 
 - **Header** e **Footer** em todas as páginas, conforme o design.
 - Funcionalidades de **autenticação** usando [Clerk](https://clerk.com/docs/quickstarts/react).
-- **Carrossel de produtos** na página inicial.
+- **Carrossel de produtos** na página inicial, utilizando a biblioteca **Splide**.
 - Funcionalidades de **carrinho de compras** e **checkout**, com proteção de rotas.
-- **Validações de formulários** para garantir entradas corretas.
+- **Validações de formulários** para garantir entradas corretas, com auxílio do **ViaCEP** para preenchimento automático de endereços.
 - **JSON Server** para simulação do banco de dados, com filtros e paginação.
 - **Responsividade** garantida para diferentes dispositivos.
 
@@ -50,11 +50,14 @@ O projeto segue o layout disponibilizado no [Figma](https://www.figma.com/design
 
 ## 📍 Tecnologias Utilizadas
 
-- **React** e **TypeScript**.
-- **Tailwind CSS** (ou outro framework de sua escolha).
-- **React Router** para navegação.
-- **JSON Server** para simulação do backend.
-- **Clerk** para autenticação de usuários.
+- **React** e **TypeScript** para desenvolvimento da interface.
+- **CSS** para estilização e **Tailwind CSS** (ou outro framework de sua escolha) para otimização do layout e design responsivo.
+- **JavaScript** para funcionalidades interativas e dinâmicas.
+- **JSON Server** para simulação do backend, criando uma API local.
+- **Clerk** para autenticação de usuários, garantindo uma navegação segura.
+- **ViaCEP** para preenchimento automático de endereços durante o processo de checkout.
+- **Splide** para a implementação do carrossel de produtos na página inicial.
+- **React Router** para navegação entre as páginas.
 
 ## ⚠️ Data de Entrega
 
