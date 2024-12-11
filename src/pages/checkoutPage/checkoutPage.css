@@ -80,11 +80,11 @@
 }
 
 .checkout-page .order-summary button {
-    @apply p-3.5 text-base font-bold text-white bg-yellowAccent border-none rounded-md cursor-pointer uppercase transition-all duration-300 w-full;
+    @apply p-3.5 max-w-[318px] text-base font-bold rounded-md cursor-pointer transition-all duration-300;
 }
 
 .checkout-page .order-summary button:hover {
-    @apply bg-yellowAccent;
+    @apply bg-yellowAccent text-white border-yellowAccent;
 }
 
 /* Responsive Design */
@@ -95,6 +95,7 @@
 
     .checkout-page {
         @apply flex-col;
+        padding: 0;
     }
 
     .checkout-page .billing-details .form-group textarea {
@@ -105,4 +106,30 @@
     .checkout-page .order-summary {
         @apply w-full max-w-full;
     }
+}
+
+.order-summary {
+    align-items: center;
+}
+
+.order-summary .product-list, .order-summary .price-section{
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product-item {
+    width: 100%;
+}
+
+
+.order-summary .btn-place-order {
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-place-order {
+    border: 1px solid black ;
+    background: transparent;
+    color: black;
+    width: 200px;
 }

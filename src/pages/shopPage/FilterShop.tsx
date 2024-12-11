@@ -12,6 +12,7 @@ interface FilterShopProps {
   indexOfFirstProduct: number;
   indexOfLastProduct: number;
   productsLength: number;
+  setLayout: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const FilterShop: React.FC<FilterShopProps> = ({
@@ -26,8 +27,7 @@ const FilterShop: React.FC<FilterShopProps> = ({
   indexOfFirstProduct,
   indexOfLastProduct,
   productsLength,
-
-
+  setLayout
 }) => {
   return (
     <div className="c-fill-shop cont-conteiner">
@@ -35,7 +35,7 @@ const FilterShop: React.FC<FilterShopProps> = ({
         <section>
           <div>
             <button onClick={() => setShowFilterPopup(true)}>
-              <img src="../../../../../assets/img/filter.svg" alt="" />
+              <img src="../../../../../assets/img/filter.svg" alt="Filter Icon" />
               Filter
             </button>
           </div>
@@ -45,12 +45,14 @@ const FilterShop: React.FC<FilterShopProps> = ({
               <div className="fill-category">
                 <div className="t-fill">
                   <h4>Filter by Category</h4>
-                  <button onClick={() => setShowFilterPopup(false)}><i class='bx bx-x-circle'></i></button>
+                  <button onClick={() => setShowFilterPopup(false)}>
+                    <i className='bx bx-x-circle'></i>
+                  </button>
                 </div>
 
                 <button onClick={() => filterByCategory("")}>All Categories</button>
                 {categories.map((category) => (
-                  <button key={category.id} onClick={() => filterByCategory(category.id)}>
+                  <button key={category.id} onClick={() => filterByCategory(category.id.toString())}>
                     {category.name}
                   </button>
                 ))}
@@ -59,8 +61,18 @@ const FilterShop: React.FC<FilterShopProps> = ({
           )}
 
           <div className="grids-overv">
-            <img src="/assets/img/grid.png" alt="" />
-            <img src="/assets/img/list.png" alt="" />
+            <img
+              className="grid"
+              src="/assets/img/grid.png"
+              alt="Grid Layout"
+              onClick={() => setLayout('grid')}
+            />
+            <img
+              className="list"
+              src="/assets/img/list.png"
+              alt="List Layout"
+              onClick={() => setLayout('list')}
+            />
           </div>
 
           <div className="show-prodss">
@@ -69,6 +81,7 @@ const FilterShop: React.FC<FilterShopProps> = ({
             </p>
           </div>
         </section>
+
         <section>
           <div>
             <label>
@@ -84,7 +97,7 @@ const FilterShop: React.FC<FilterShopProps> = ({
 
           <div>
             <label>
-              Short by Price:
+              Sort by Price:
               <select value={sortOrder} onChange={handleSortChange}>
                 <option value="default">Default</option>
                 <option value="asc">Low to High</option>
@@ -95,7 +108,6 @@ const FilterShop: React.FC<FilterShopProps> = ({
         </section>
       </div>
     </div>
-
   );
 };
 

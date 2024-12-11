@@ -3,15 +3,26 @@ import "./checkoutPage.css";
 
 const Checkout = () => {
   const [cartItems, setCartItems] = useState([]);
-  const [cep, setCep] = useState(""); // Estado para o CEP
+  const [cep, setCep] = useState("");
   const [address, setAddress] = useState({
     street: "",
     city: "",
     state: "",
     neighborhood: "",
-  }); // Estado para o endereço
+  }); 
 
-  // Obter os itens do Local Storage ao carregar o componente
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    companyName: "",
+    country: "",
+    addOnAddress: "",
+    email: "",
+    additionalInfo: "",
+  });
+
+  const [formErrors, setFormErrors] = useState({});
+
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
     if (storedCart) {
@@ -19,13 +30,12 @@ const Checkout = () => {
     }
   }, []);
 
-  // Função para consultar o ViaCEP
   const consultarCep = async (cep) => {
     if (cep.length === 8) {
       try {
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         const data = await response.json();
-        
+
         if (!data.erro) {
           setAddress({
             street: data.logradouro || "",
@@ -34,15 +44,14 @@ const Checkout = () => {
             neighborhood: data.bairro || "",
           });
         } else {
-          alert("CEP não encontrado.");
+          setFormErrors((prevErrors) => ({ ...prevErrors, cep: "Zip code not found." }));
         }
       } catch (error) {
-        alert("Erro ao consultar o CEP.");
+        setFormErrors((prevErrors) => ({ ...prevErrors, cep: "Error when querying the CEP." }));
       }
     }
   };
 
-  // Função para atualizar o CEP e buscar o endereço
   const handleCepChange = (event) => {
     const newCep = event.target.value;
     setCep(newCep);
@@ -52,46 +61,77 @@ const Checkout = () => {
     }
   };
 
-  // Calcular o subtotal
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormErrors((prevErrors) => ({ ...prevErrors, [name]: "" })); 
+  };
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (!formData.firstName) errors.firstName = "First name is required.";
+    if (!formData.lastName) errors.lastName = "Last name is required.";
+    if (!cep) errors.cep = "ZIP code is required.";
+    if (!formData.country) errors.country = "Country/Region is required.";
+    if (!formData.email) {
+      errors.email = "Email is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      errors.email = "Invalid email address.";
+    }
+
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+    }
+  };
+
+  const handlePlaceOrder = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+    }
+  };
+
   const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
-  // Calcular o desconto total (aplicando o desconto de cada item)
   const discount = cartItems.reduce((total, item) => total + (item.price * item.quantity * item.discount) / 100, 0);
 
-  // Calcular o total (Subtotal - desconto + taxa fixa, se houver)
   const total = subtotal - discount;
 
   return (
     <div className="checkout-page">
       <div className="billing-details">
         <h2>Billing Details</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="form-group">
               <label>First Name</label>
-              <input type="text" />
+              <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} />
+              {formErrors.firstName && <span className="error-message">{formErrors.firstName}</span>}
             </div>
             <div className="form-group">
               <label>Last Name</label>
-              <input type="text" />
+              <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} />
+              {formErrors.lastName && <span className="error-message">{formErrors.lastName}</span>}
             </div>
           </div>
           <div className="form-group">
             <label>Company Name (Optional)</label>
-            <input type="text" />
+            <input type="text" name="companyName" value={formData.companyName} onChange={handleInputChange} />
           </div>
           <div className="form-group">
             <label>ZIP code</label>
-            <input
-              type="text"
-              value={cep}
-              onChange={handleCepChange}
-              maxLength="8"
-            />
+            <input type="text" name="cep" value={cep} onChange={handleCepChange} maxLength="8" />
+            {formErrors.cep && <span className="error-message">{formErrors.cep}</span>}
           </div>
           <div className="form-group">
             <label>Country / Region</label>
-            <input type="text" />
+            <input type="text" name="country" value={formData.country} onChange={handleInputChange} />
+            {formErrors.country && <span className="error-message">{formErrors.country}</span>}
           </div>
           <div className="form-group">
             <label>Street Address</label>
@@ -107,16 +147,18 @@ const Checkout = () => {
           </div>
           <div className="form-group">
             <label>Add-on Address</label>
-            <input type="text" />
+            <input type="text" name="addOnAddress" value={formData.addOnAddress} onChange={handleInputChange} />
           </div>
           <div className="form-group">
             <label>Email Address</label>
-            <input type="email" />
+            <input type="text" name="email" value={formData.email} onChange={handleInputChange} />
+            {formErrors.email && <span className="error-message">{formErrors.email}</span>}
           </div>
           <div className="form-group">
             <label>Additional Information</label>
-            <textarea />
+            <textarea name="additionalInfo" value={formData.additionalInfo} onChange={handleInputChange} />
           </div>
+          <button type="submit" className="btn-place-order" onClick={handlePlaceOrder}>Place Order</button>
         </form>
       </div>
 
@@ -154,17 +196,19 @@ const Checkout = () => {
             <input type="radio" name="payment" id="bank-transfer" />
             <label htmlFor="bank-transfer">Direct Bank Transfer</label>
             <p>
-              Make your payment directly into our bank account. Please use your
-              Order ID as the payment reference.
+              Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.
             </p>
           </div>
           <div>
-            <input type="radio" name="payment" id="cash-on-delivery" />
-            <label htmlFor="cash-on-delivery">Cash On Delivery</label>
+            <input type="radio" name="payment" id="cash-delivery" />
+            <label htmlFor="cash-delivery">Cash on Delivery</label>
+          </div>
+          <div>
+            <input type="radio" name="payment" id="credit-card" />
+            <label htmlFor="credit-card">Credit Card</label>
           </div>
         </div>
-
-        <button>Place Order</button>
+        <button type="submit" className="btn-place-order" onClick={handlePlaceOrder}>Place Order</button>
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ const ShopPage = () => {
   const [inputValue, setInputValue] = useState(16);
   const [sortOrder, setSortOrder] = useState("default");
   const [cart, setCart] = useState([]);
+  const [layout, setLayout] = useState("grid");
 
   const categories = data.categories;
 
@@ -168,6 +169,7 @@ const ShopPage = () => {
         indexOfFirstProduct={indexOfFirstProduct}
         indexOfLastProduct={indexOfLastProduct}
         productsLength={products.length}
+        setLayout={setLayout} 
       />
 
       {loading ? (
@@ -175,7 +177,7 @@ const ShopPage = () => {
       ) : (
         <div className="cont-conteiner">
           <div className="sec-conteiner">
-            <div className="products">
+            <div className={`products ${layout}`}>
               {productsPerPage === 0 ? (
                 <p>No products available.</p>
               ) : currentProducts.length > 0 ? (
@@ -188,6 +190,8 @@ const ShopPage = () => {
                         <div className="group">
                           <h4 className="product-name">{product.name}</h4>
                           <p className="short-description">{product.short_description}</p>
+                          <p className="description">{product.description}</p>
+                          <p className="description large">{product.large_description}</p>
                           <div className="price">
                             {product.isNew === true ? (
                               <>
@@ -243,28 +247,6 @@ const ShopPage = () => {
           </div>
         </div>
       )}
-
-      <div className="cont-conteiner">
-        <div className="sec-conteiner">
-          <div className="pagination">
-            {currentPage > 1 && (
-              <button onClick={prevPage}>Previous</button>
-            )}
-            {generatePageNumbers().map((pageNumber) => (
-              <button
-                key={pageNumber}
-                onClick={() => goToPage(pageNumber)}
-                className={pageNumber === currentPage ? "active" : ""}
-              >
-                {pageNumber}
-              </button>
-            ))}
-            {currentPage < totalPages && (
-              <button onClick={nextPage}>Next</button>
-            )}
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -15,7 +15,7 @@
 
 /* Categories */
 .categories-grid {
-    @apply grid grid-cols-3 gap-[15px] w-full items-center justify-center ;
+    @apply grid grid-cols-3 gap-[15px] w-full items-center justify-center;
     justify-items: center;
 }
 
@@ -56,6 +56,35 @@
 }
 
 .cont-room .column-h {
-    width: calc(50% - 30px);
+    width: auto;
 }
 
+.sec-conteiner:has(div.homepage){
+    max-width: 100%;
+}
+
+.cont-room{
+    width: 100%;
+}
+
+.sec-w {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 0;
+    gap: 20px;
+}
+
+@media (max-width:1300){
+    .sec-w {
+        padding: 20px;
+    }
+}
+
+.rom {
+    width: 40% !important;
+    justify-content: center;
+}
+.cars {
+    width: calc(60% - 30px) !important;
+}
