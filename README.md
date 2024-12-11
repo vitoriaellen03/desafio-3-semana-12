@@ -51,7 +51,7 @@ O projeto segue o layout disponibilizado no [Figma](https://www.figma.com/design
 ## 📍 Tecnologias Utilizadas
 
 - **React** e **TypeScript** para desenvolvimento da interface.
-- **CSS** para estilização e **Tailwind CSS** (ou outro framework de sua escolha) para otimização do layout e design responsivo.
+- **CSS** para estilização e **Tailwind CSS** para otimização do layout e design responsivo.
 - **JavaScript** para funcionalidades interativas e dinâmicas.
 - **JSON Server** para simulação do backend, criando uma API local.
 - **Clerk** para autenticação de usuários, garantindo uma navegação segura.
