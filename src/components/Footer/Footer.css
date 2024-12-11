@@ -23,7 +23,8 @@
 
 /*Foter*/
 .footer {
-    @apply bg-white p-8 font-sans text-[#333] border-t-2 border-[#e7e7e7] ;
+    @apply bg-white font-sans text-[#333] border-t-2 border-[#e7e7e7] ;
+    padding: 20px 20px 0 20px;
 }
 
 .footerSection {
@@ -80,4 +81,7 @@
 
 footer .options-links {
     @apply flex flex-col gap-5;
+}
+.footerBottom {
+    padding: 20px 0;
 }

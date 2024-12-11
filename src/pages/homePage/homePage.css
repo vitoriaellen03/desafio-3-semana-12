@@ -47,7 +47,7 @@
     margin-top: 30px;
 }
 
-.cont-room{
+.cont-room {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,11 +59,11 @@
     width: auto;
 }
 
-.sec-conteiner:has(div.homepage){
+.sec-conteiner:has(div.homepage) {
     max-width: 100%;
 }
 
-.cont-room{
+.cont-room {
     width: 100%;
 }
 
@@ -75,7 +75,7 @@
     gap: 20px;
 }
 
-@media (max-width:1300){
+@media (max-width:1300) {
     .sec-w {
         padding: 20px;
     }
@@ -85,6 +85,28 @@
     width: 40% !important;
     justify-content: center;
 }
+
 .cars {
     width: calc(60% - 30px) !important;
+}
+
+
+@media (max-width:850px) {
+    .rom {
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .cars {
+        width: 100% !important;
+    }
+
+    .sec-w {
+        gap: 40px;
+    }
+
+    .splide__pagination {
+        right: 0 !important;
+        position: initial !important;
+    }
 }

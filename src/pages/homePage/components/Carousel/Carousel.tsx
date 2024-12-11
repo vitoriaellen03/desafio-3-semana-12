@@ -1,21 +1,10 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css'; 
+import React, { useEffect } from 'react';
+import { Splide } from '@splidejs/splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import './Carousel.css';
+import { SmoothTransition } from './SmoothTransition.js';
 
 const Carousel = () => {
-  const settings = {
-    dots: true, 
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1, 
-    slidesToScroll: 1,
-    focusOnSelect: true, 
-    centerMode: true, 
-    nextArrow: <div className="slick-next"></div>, 
-  };
-
   const images = [
     "/assets/img/car-1.jpg",
     "/assets/img/car-2.jpg",
@@ -23,21 +12,41 @@ const Carousel = () => {
     "/assets/img/car-4.jpg",
   ];
 
+  useEffect(() => {
+    const splide = new Splide('.splide', {
+      type: 'loop',
+      perPage: 2,
+      perMove: 1,
+      gap: '1rem',
+      speed: 600,
+      easing: 'ease',
+      breakpoints: {
+        640: {
+          perPage: 1,
+        },
+      },
+    });
+
+    splide.mount({}, SmoothTransition);
+
+    return () => {
+      splide.destroy();
+    };
+  }, []);
+
   return (
-    <div className="px-4 py-5 w-100 h-auto" id="custom-cards">
-      <Slider {...settings}>
-        {images.map((imageUrl, index) => (
-          <div key={index} className="item-image">
-            <img 
-              src={imageUrl} 
-              alt={`Image ${index + 1}`} 
-              className="carousel-image"
-            />
-          </div>
-        ))}
-      </Slider>
+    <div id="custom-cards" className="splide">
+      <div className="splide__track">
+        <ul className="splide__list">
+          {images.map((src, index) => (
+            <li className="splide__slide" key={index}>
+              <img src={src} alt={`Car Image ${index + 1}`} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
-}
+};
 
 export default Carousel;

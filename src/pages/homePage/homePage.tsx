@@ -44,7 +44,7 @@ const HomePage = () => {
                 <section className="column-h rom">
                   <h2>50+ Beautiful rooms inspiration</h2>
                   <p>Our designer already made a lot of beautiful prototypes of rooms that inspire you</p>
-                  <div >
+                  <div className="flex">
                     <Link to='/shop' className="btn-exp">Explore More</Link>
                   </div>
                 </section>
